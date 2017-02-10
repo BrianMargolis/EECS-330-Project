@@ -1,0 +1,13 @@
+.header * {
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+}
+
+#side_link {
+    border: solid 1px;
+}
+
+#main_pane {
+    border: solid 1px;
+}
