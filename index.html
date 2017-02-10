@@ -8,14 +8,15 @@
     <link href="frameworks/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="frameworks/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen"/>
 
-    <script src="frameworks/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="frameworks/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="frameworks/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/control.js" type="text/javascript"></script>
 
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
 
     <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>-->
 </head>
-<body>
+<body onload="main()">
 
 <div class="header">
     <div class="container-fluid">
@@ -33,28 +34,50 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-1" id="side_link">
-            DASHBOARD
-            FAVORITES
-            RECENT STATS
+            <a href = "#">Dashboard</a>
+            <a href = "favorites.html">Favorites</a>
+            <a href = "recent_stats.html">Recent Stats</a>
         </div>
         <div class="col-md-11" id="main_pane">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                    Dropdown
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <!--<li role="separator" class="divider"></li>-->
-                    <li><a href="#">Separated link</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-group">
+                        <!--<i class="dropdown-arrow dropdown-arrow-inverse"></i>-->
+                        <button class="btn btn-primary status">Past Week</button>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-inverse">
+                            <li><a href="#">Past 24 Hours</a></li>
+                            <li><a href="#">Past Week</a></li>
+                            <li><a href="#">Past 4 Weeks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">Number of Songs</div>
+                <div class="col-md-6">Number of Songs/Genre</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            Total Time Listening
+                        </div>
+                        <div class="col-md-12">
+                            Total Number of Songs
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">Music Source</div>
+            </div>
+            <div class="row" id="add_chart">
+                Add a Chart
             </div>
         </div>
     </div>
 </div>
-
 </body>
 
 

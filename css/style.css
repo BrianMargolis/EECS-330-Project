@@ -11,3 +11,7 @@
 #main_pane {
     border: solid 1px;
 }
+
+#add_chart {
+    text-align: center;
+}
