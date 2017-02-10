@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TITLE NEEDED</title>
+    <title>Music Stats</title>
 
     <link href="frameworks/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="frameworks/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen"/>
@@ -35,9 +35,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2" id="side_link">
-            <a href = "index.html">Dashboard</a>
-            <a href = "favorites.html">Favorites</a>
-            <a href = "recent_stats.html">Recent Stats</a>
+            <a href = "index.html"><font size="5">Dashboard</font></a>
+            <a href = "favorites.html"><font size="5">Favorites</font></a>
+            <a href = "recent_stats.html"><font size="5">Recent Stats</font></a>
         </div>
         <div class="col-md-10" id="main_pane">
             <div class="row">
@@ -56,24 +56,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">Number of Songs</div>
-                <div class="col-md-6">Number of Songs/Genre</div>
+                <div class="col-md-6">
+                <img src = "images/songsOverTime_pastWeek.png" alt="songsOverTime_pastWeek" height = "300">
+                </div>
+                <div class="col-md-6">
+                <img src = "images/songsPerGenre_pastWeek.png" alt="songsPerGenre_pastWeek" height = "300">
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-12">
                             Total Time Listening
+                            <div style="text-align:center"><font size="30">467min</font></div>
+                            <div style="text-align:center"> <small> down 20% from last week</small></div>
                         </div>
                         <div class="col-md-12">
-                            Total Number of Songs
+                            <br>Total Number of Songs
+                            <div style="text-align:center"><font size="30">394min</font></div>
+                            <div style="text-align:center"> <small> up 2% from last week</small></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">Music Source</div>
+                <div class="col-md-9">
+                <img src = "images/musicSource_pastWeek.png" alt="musicSource_pastWeek" height = "300">
+                </div>
             </div>
             <div class="row" id="add_chart">
-                Add a Chart
+                <button>&#43 Add a Chart</button>
             </div>
         </div>
     </div>
