@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,74 @@
 
     <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>-->
 </head>
-<body>
+<body onload="main()">
 
+<div class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                Jeffy
+                <img src = "images/user_pic.png" alt="User Pic" height="50" width="50">
+            </div>
+            <div class="col-md-11">
+                <a href="index.html"><h1>M</h1></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2" id="side_link">
+            <a href = "index.html">Dashboard</a>
+            <a href = "favorites.html">Favorites</a>
+            <a href = "recent_stats.html">Recent Stats</a>
+        </div>
+        <div class="col-md-10" id="main_pane">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-group">
+                        <button class="btn btn-primary status">Past Week</button>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-inverse">
+                            <li><a href="#">Past 24 Hours</a></li>
+                            <li><a href="#">Past Week</a></li>
+                            <li><a href="#">Past 4 Weeks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col-md-6">Time Of Day Listen Most</div>
+                <div class = "col-md-6">Songs per Genre</div>
+            </div>
+            <div class="row">
+                <div class = "col-md-4">
+                    <div class = "row">
+                        Songs
+                    </div>
+                    <div class = "row">
+                        Unique Songs
+                    </div>
+                </div>
+                <div class = "col-md-4">
+                    <div class = "row">
+                        Albums
+                    </div>
+                    <div class = "row">
+                        Artists
+                    </div>
+                </div>
+                <div class = "col-md-4">
+                    Minutes Listened To
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+
+
 </html>

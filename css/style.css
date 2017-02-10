@@ -15,3 +15,7 @@
 #add_chart {
     text-align: center;
 }
+
+#side_link a {
+    font-size: 32px;
+}
