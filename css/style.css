@@ -38,3 +38,19 @@
 #big_graph {
 	text-align: center;
 }
+
+.big_stat {
+	color: rgb(219, 221, 224);
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#list_heading {
+	color: rgb(219, 221, 224);
+	border-bottom: 5px;
+}
+
+ol p {
+	color: rgb(219, 221, 224);
+	font-style: italic;
+}

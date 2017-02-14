@@ -21,12 +21,12 @@
 <div class="header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-1">
-                Jeffy
-                <img src = "images/user_pic.png" alt="User Pic" height="50" width="50">
+            <div class="col-md-2" id = "accountInfo" >
+                <img src = "images/user_pic.png" alt="User Pic">
+                JEFFY
             </div>
-            <div class="col-md-11">
-                <a href="index.html"><h1>M</h1></a>
+            <div class="col-md-10">
+                <a href="index.html"><img src = "images/Logo_Rough.png" alt = "soundscape"/></a>
             </div>
         </div>
     </div>
@@ -36,12 +36,14 @@
     <div class="row">
         <div class="col-md-2" id="side_link">
             <a href = "index.html"><font size="5">Dashboard</font></a>
-            <a href = "favorites.html"><font size="5">Favorites</font></a>
+            <br>
+            <a href = "favorites.html"><font size="5">FAVORITES</font></a>
+            <br>
             <a href = "recent_stats.html"><font size="5">Recent Stats</font></a>
         </div>
         <div class="col-md-10" id="main_pane">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id = "time_selection">
                     <div class="btn-group">
                         <button class="btn btn-primary status">Past Week</button>
                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -57,46 +59,79 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <br><strong>Top 10 Songs</strong>
-                    <br>1. One Dance
-                    <br>2. 7 Years
-                    <br>3. Cheap Thrills
-                    <br>4. I took a pill in Ibiza
-                    <br>5. This is What you Came For
-                    <br>6. Lush Life
-                    <br>7. Closer
-                    <br>8. Love Yourself
-                    <br>9. Work
-                    <br>10. Can't Stop the Feeling
+                    <br>
+                    <h3 id = "list_heading">TOP 10 SONGS</h3>
+                    <ol >
+                        <li> ONE DANCE </li>
+                            <p>Drake</p>
+                        <li> 7 YEARS </li>
+                            <p>Lukas Graham</p>
+                        <li> CHEAP THRILLS </li>
+                            <p>Sia</p>
+                        <li> I TOOK A PILL IN IBIZA </li>
+                            <p>Mike Posner</p>
+                        <li> THIS IS WHAT YOU CAME FOR </li>
+                            <p>Calvin Harris Ft. Rihanna</p>
+                        <li> LUSH LIFE </li>
+                            <p>Zara Larsson</p>
+                        <li> CLOSER </li>
+                            <p>The Chainsmokers Ft. Halsey</p>
+                        <li> LOVE YOURSELF </li>
+                            <p>Justin Bieber</p>
+                        <li> WORK </li>
+                            <p>Rihanna Ft. Drake</p>
+                        <li> CAN'T STOP THE FEELING </li>
+                            <p>Justin Timberlake</p>
+                    </ol>
                 </div>
 
                 <div class="col-md-4">
-                    <br><strong>Top 10 Artists</strong>
-                    <br>1. The Weeknd
-                    <br>2. Ed Sheeren
-                    <br>3. The Chainsmokers
-                    <br>4. Bruno Mars
-                    <br>5. Drake
-                    <br>6. Twenty One Pilots
-                    <br>7. Ariana Grande
-                    <br>8. Rihanna
-                    <br>9. The XXX
-                    <br>10. Adele
+                    <br>
+                    <h3 id = "list_heading">TOP 10 ALBUMS</h3>
+                    <ol >
+                        <li> STARBOY </li>
+                            <p>The Weeknd</p>
+                        <li> I SEE YOU </li>
+                            <p>The XXX</p>
+                        <li> LA LA LAND </li>
+                            <p>Original Motion Picture Soundtrack</p>
+                        <li> MOANA</li>
+                            <p>Original Motion Picture Soundtrack</p>
+                        <li> 24K MAGIC</li>
+                            <p>Bruno Mars</p>
+                        <li> HAMILTON </li>
+                            <p>Original Broadway Cast Recording</p>
+                        <li> 4 YOUR EYEZ ONLY </li>
+                            <p>J Cole</p>
+                        <li> VIEWS </li>
+                            <p>Drake</p>
+                        <li> STONEY </li>
+                            <p>Post Malone</p>
+                        <li> TREATS </li>
+                            <p>Original Motion Picture Soundtrack</p>
+                    </ol>
                 </div>
+
                 <div class="col-md-4">
-                 <br><strong>Top 10 Albums</strong>
-                    <br>1. Starboy - The Weeknd
-                    <br>2. I See You - The XXX
-                    <br>3. La La Land - Sountrack
-                    <br>4. Moana - Soundtrack
-                    <br>5. 24K Magic - Bruno Mars
-                    <br>6. Hamilton: An amar of roseak
-                    <br>7. 4 Your Eyez Only - J Cole
-                    <br>8. Views - Drake
-                    <br>9. Stoney - Post Malone
-                    <br>10. Treats - Soundtrack
+                    <br>
+                    <h3 id = "list_heading">TOP 10 ARTISTS</h3>
+                    <ol >
+                        <li> THE WEEKND </li>
+                        <li> ED SHEERAN </li>
+                        <li> THE CHAINSMOKERS </li>
+                        <li> BRUNO MARS </li>
+                        <li> DRAKE </li>
+                        <li> TWENTY ONE PILOTS </li>
+                        <li> ARIANA GRANDE </li>
+                        <li> RIHANNA </li>
+                        <li> THE XXX </li>
+                        <li> ADELE </li>
+                    </ol>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
             <div class="row">
                 <div class = "col-md-6">
                 <br>
@@ -107,6 +142,8 @@
                 <img src = "images/musicSource_pastWeek.png" alt="musicSource_pastWeek" height = "400">
                 </div>
             </div>
+            <br>
+            <br>
         </div>
     </div>
 </div>

@@ -21,12 +21,12 @@
 <div class="header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-1">
-                Jeffy
-                <img src="images/user_pic.png" alt="User Pic" height="50" width="50">
+            <div class="col-md-2" id = "accountInfo" >
+                <img src = "images/user_pic.png" alt="User Pic">
+                JEFFY
             </div>
-            <div class="col-md-11">
-                <a href="index.html"><h1>M</h1></a>
+            <div class="col-md-10">
+                <a href="index.html"><img src = "images/Logo_Rough.png" alt = "soundscape"/></a>
             </div>
         </div>
     </div>
@@ -36,12 +36,14 @@
     <div class="row">
         <div class="col-md-2" id="side_link">
             <a href = "index.html"><font size="5">Dashboard</font></a>
+            <br>
             <a href = "favorites.html"><font size="5">Favorites</font></a>
-            <a href = "recent_stats.html"><font size="5">Recent Stats</font></a>
+            <br>
+            <a href = "recent_stats.html"><font size="5">RECENT STATS</font></a>
         </div>
         <div class="col-md-10" id="main_pane">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id = "time_selection">
                     <div class="btn-group">
                         <button class="btn btn-primary status">Past Week</button>
                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -58,51 +60,60 @@
             <div class="row">
                 <div class="col-md-12">
                 <br>
-                <img src = "images/timeOfDay_pastWeek.png" alt="timeOfDay_pastWeek" height = "150">
+                <img src = "images/timeOfDay_pastWeek.png" alt="timeOfDay_pastWeek" height = "150" style = "display:block;">
                 </div>
             </div>
+            <br>
+            <br>
             <div class="row">
                 <div class="col-md-6">
                 <img src = "images/songsPerGenre_pastWeek.png" alt="songsPerGenre_pastWeek" height = "300" height = "300">
                 </div>
                 <div class="col-md-2">
                     <div class="row">
-                        <div class="col-md-12">
-                            <br> Songs
+                        <div class="col-md-12, big_stat">
+                            <br> 
+                            TOTAL SONGS
                             <div style="text-align:center"><font size="30">394</font></div>
-                            <div style="text-align:center"> <small> up 2% from last week</small></div>
+                            &#8593 2% from last week
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <br> Unique Songs
+                        <div class="col-md-12, big_stat">
+                            <br> TOTAL UNIQUE SONGS
                             <div style="text-align:center"><font size="30">100</font></div>
-                            <div style="text-align:center"> <small> down 7% from last week</small> </div>
+                            &#8595 7% from last week
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="row">
-                        <div class="col-md-12">
-                            <br>Albums
+                        <div class="col-md-12, big_stat">
+                            <br>TOTAL ALBUMS
                             <div style="text-align:center"><font size="30">84</font></div>
-                            <div style="text-align:center"> <small> down 11% from last week</small> </div>
+                            &#8595 11% from last week
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <br>Artists
+                        <div class="col-md-12, big_stat">
+                            <br>TOTAL ARTISTS
                             <div style="text-align:center"><font size="30">25</font></div>
-                            <div style="text-align:center"> <small> up 10% from last week</small> </div>
+                            &#8593 10% from last week
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <br>Minutes Listened
-                    <div style="text-align:center"><font size="30">700</font></div>
-                    <div style="text-align:center"> <small> up 20% from last week</small> </div>
+                    <div class="row">
+                        <div class="col-md-12, big_stat">
+                            <br>MINUTES LISTENED
+                            <div style="text-align:center"><font size="30">700</font></div>
+                            &#8593 20% from last week
+                        </div>
+                    </div>
                 </div>
             </div>
+            <br>
+            <br>
         </div>
     </div>
 </div>
