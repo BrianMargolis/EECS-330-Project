@@ -1,15 +1,26 @@
-.header * {
-    background-color: darkgray;
-    text-align: center;
-    color: white;
+* {
+	font-family: Verdana, Sans-serif;
+	color: rgba(80, 237, 218, 1);
+
 }
 
-#side_link {
-    border: solid 1px;
+.header * {
+    background-color: rgba(47, 48, 48, 1);
+    text-align: center;
+    padding: 10px;
+}
+
+#side_link *{
+	color: rgba(47, 48, 48, 1);
+	height: 100%;
 }
 
 #main_pane {
-    border: solid 1px;
+    background-color: rgba(107, 107, 107, 1);
+}
+
+#time_selection {
+	padding: 20px;
 }
 
 #add_chart {
@@ -18,4 +29,12 @@
 
 #side_link a {
     font-size: 32px;
+}
+
+#accountInfo {
+	text-align: left;
+}
+
+#big_graph {
+	text-align: center;
 }
