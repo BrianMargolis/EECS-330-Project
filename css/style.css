@@ -1,7 +1,16 @@
 * {
+<<<<<<< HEAD
     font-family: Verdana, sans-serif;
     color: #0bdbdb;
+=======
+    font-family: Verdana, Sans-serif;
+    color: rgba(80, 237, 218, 1);
+    box-sizing: border-box;
+}
+>>>>>>> origin/master
 
+body {
+	background-color: rgba(47,48,48,1);
 }
 
 body {
@@ -36,8 +45,21 @@ body {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 #dark {
     background-color: #3c3c3c;
+=======
+.widget{
+	background-color: rgba(107, 107, 107, 1);
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 30px;
+}
+
+#dark{
+	background-color: rgba(60, 60, 60, 1);
+>>>>>>> origin/master
 }
 
 #light {
@@ -56,11 +78,16 @@ body {
 }
 
 #main_pane {
+<<<<<<< HEAD
     background-color: #6b6b6b;
+=======
+    background-color: rgba(47, 48, 48, 1);
+>>>>>>> origin/master
 }
 
 #time_selection {
     padding: 20px;
+    text-align: left;
 }
 
 .btn {
@@ -83,12 +110,17 @@ body {
 .big_stat {
     color: #dbdde0;
     text-align: center;
-    padding-bottom: 30px;
 }
 
 .list_heading {
     color: #dbdde0;
     border-bottom: 5px;
+    text-align: center;
+}
+
+#login {
+	position: relative;
+	left: 380px;
 }
 
 ol p {
@@ -96,6 +128,7 @@ ol p {
     font-style: italic;
 }
 
+<<<<<<< HEAD
 .graph_title {
     font-weight: bold;
     color: #F5F5F5;
@@ -105,6 +138,8 @@ ol p {
     width: 420px;
 }
 
+=======
+>>>>>>> origin/master
 .login {
     text-align: center;
     color: #F5F5F5;
@@ -117,4 +152,8 @@ ol p {
 }
 #username {
     color: #0bdbdb;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
