@@ -26,147 +26,102 @@
 <body onload="main()">
 
 <div class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2" id="accountInfo">
-                <a href="profile.html">
-                    <img src="images/user_pic.png" alt="User Pic">
-                    JEFFY
-                </a>
-            </div>
-            <div class="col-md-10">
-                <a href="index.html"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="row sidebar">
-        <div class="col-md-2 side_link">
-            <a href="index.html">Dashboard</a>
-            <a href="favorites.html">Favorites</a>
-            <a href="recent_stats.html" class="active">Recent Stats</a>
-        </div>
-        <div class="col-md-10" id="main_pane">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12" id="time_selection">
-                    <div class="btn-group">
-                        <button class="btn btn-primary status">Past Week</button>
-                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-inverse">
-                            <li><a href="#">Past 24 Hours</a></li>
-                            <li><a href="#">Past Week</a></li>
-                            <li><a href="#">Past 4 Weeks</a></li>
-                        </ul>
-                    </div>
+                <div class="col-md-2" id = "accountInfo" >
+                <a href="profile.html">
+                    <img src = "images/user_pic.png" alt="User Pic" width="80">
+                    <br>
+                    JEFFY
+             </a>
+               
+                </div>
+                <div class="col-md-10">
+                    <a href="index.html"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
+                    <a href="login.html" id = "login">Logout</a>
+            </div>
                 </div>
             </div>
-            <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+</div>
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Time', 'Number of songs' ],
-          ['12:00 AM',  30],
-          ['1:00 AM',  0 ],
-          ['2:00 AM',  0 ],
-          ['3:00 AM',  0 ],
-          ['4:00 AM',  0 ],
-          ['5:00 AM',  0 ],
-          ['6:00 AM',  0 ],
-          ['7:00 AM',  0 ],
-          ['8:00 AM',  5 ],
-          ['9:00 AM',  12 ],
-          ['10:00 AM',  41 ],
-          ['11:00 AM',  14 ],
-          ['12:00 PM',  19 ],
-          ['1:00 PM',  35 ],
-          ['2:00 PM',  39 ],
-          ['3:00 PM',  46 ],
-          ['4:00 PM',  48 ],
-          ['5:00 PM',  16 ],
-          ['6:00 PM',  22 ],
-          ['7:00 PM',  58 ],
-          ['8:00 PM',  85 ],
-          ['9:00 PM',  113 ],
-          ['10:00 PM',  74 ],
-          ['11:00 PM',  48 ],
-        ]);
 
-        var options = {
-          title: 'Number of songs per time of day ',
-          curveType: 'function',
-          legend: { position: 'bottom' }, 
-          colors: ['#50edda'],
-          backgroundColor: '#6b6b6b'
-         
-         
-
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-  <body>
-    <div id="curve_chart" style="width: 900px; height: 500px; background-color: 'transparent' "></div>
-  </body>
-            <br>
-            <br>
-            <p><span class="title">  </span><span class="title"> Songs by genre </span></p>
-            <canvas id="SongsbyGenre" width="500" height="300"></canvas>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>
-                        TOTAL SONGS
-                        <div style="text-align:center"><font size="30">394</font></div>
-                        &#8593 2% from last week
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br> TOTAL UNIQUE SONGS
-                        <div style="text-align:center"><font size="30">100</font></div>
-                        &#8595 7% from last week
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>TOTAL ALBUMS
-                        <div style="text-align:center"><font size="30">84</font></div>
-                        &#8595 11% from last week
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>TOTAL ARTISTS
-                        <div style="text-align:center"><font size="30">25</font></div>
-                        &#8593 10% from last week
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>MINUTES LISTENED
-                        <div style="text-align:center"><font size="30">700</font></div>
-                        &#8593 20% from last week
-                    </div>
+<div class="row sidebar">
+    <div class="col-md-2 side_link">
+        <a href="index.html">Dashboard</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="recent_stats.html" class="active">Recent Stats</a>
+    </div>
+    <div class="col-md-10" id="main_pane">
+        <div class="row">
+            <div class="col-md-12" id="time_selection">
+                <div class="btn-group">
+                    <button class="btn btn-primary status">Past Week</button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-inverse">
+                        <li><a href="#">Past 24 Hours</a></li>
+                        <li><a href="#">Past Week</a></li>
+                        <li><a href="#">Past 4 Weeks</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-    </div>
+
+        <div class = "row">
+            <div class = "col-md-8">
+                <div class = "widget" style = "height: 400px">
+                    <div id="curve_chart", style="height: 80%"></div>
+                </div>
+            </div>
+            <div class = "col-md-4">
+               <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL SONGS</h3>
+                        <div style="text-align:center"><font size="30">394</font></div>
+                        <h5 id = "list_heading">&#8593 2% from last week</h5>
+                </div>
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL UNIQUE SONGS</h3>
+                        <div style="text-align:center"><font size="30">100</font></div>
+                        <h5 id = "list_heading">&#8595 7% from last week</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-3">
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL ALBUMS</h3>
+                        <div style="text-align:center"><font size="30">394</font></div>
+                        <h5 id = "list_heading">&#8595 11% from last week</h5>
+                </div>
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL ARTISTS</h3>
+                        <div style="text-align:center"><font size="30">100</font></div>
+                        <h5 id = "list_heading">&#8593 10% from last week</h5>
+                </div>
+            </div>
+            <div class = "col-md-3">
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> MINUTES LISTENED</h3>
+                        <div style="text-align:center"><font size="30">394</font></div>
+                        <h5 id = "list_heading">&#8593 20% from last week</h5>
+                </div>
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> PERCENT ON PHONE</h3>
+                        <div style="text-align:center"><font size="30">80%</font></div>
+                        <h5 id = "list_heading">&#8593 15% from last week</h5>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <div class = "widget" style = "height: 400px">
+                    <h3 id = "list_heading"> SONGS BY GENRE</h3>
+                    <canvas id="SongsbyGenre" width="500" height="300">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>  
 </div>
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -269,8 +224,8 @@
     });
 
     context.beginPath();
-    context.moveTo(-6.5, 0 + 0.5);
-    context.lineTo(0.5, 0 + 0.5);
+    context.moveTo(-6.5, 0.5);
+    context.lineTo(0.5, 0.5);
     context.lineTo(0.5, height + 0.5);
     context.lineTo(-6.5, height + 0.5);
     context.strokeStyle = "black";
@@ -290,5 +245,56 @@
     });
 
 </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+<script type="text/javascript">
+    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Time', 'Number of songs'],
+            ['12:00 AM', 30],
+            ['1:00 AM', 0],
+            ['2:00 AM', 0],
+            ['3:00 AM', 0],
+            ['4:00 AM', 0],
+            ['5:00 AM', 0],
+            ['6:00 AM', 0],
+            ['7:00 AM', 0],
+            ['8:00 AM', 5],
+            ['9:00 AM', 12],
+            ['10:00 AM', 41],
+            ['11:00 AM', 14],
+            ['12:00 PM', 19],
+            ['1:00 PM', 35],
+            ['2:00 PM', 39],
+            ['3:00 PM', 46],
+            ['4:00 PM', 48],
+            ['5:00 PM', 16],
+            ['6:00 PM', 22],
+            ['7:00 PM', 58],
+            ['8:00 PM', 85],
+            ['9:00 PM', 113],
+            ['10:00 PM', 74],
+            ['11:00 PM', 48],
+        ]);
+
+        var options = {
+            curveType: 'function',
+            legend: {position: 'bottom'},
+            colors: ['#50edda'],
+            backgroundColor: '#6b6b6b'
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+    }
+</script>
+<body>
+    <div id="curve_chart" style="width: 900px; height: 50px"></div>
+</body>
 
 </html>

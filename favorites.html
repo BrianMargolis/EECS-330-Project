@@ -26,46 +26,49 @@
 <body onload="main()">
 
 <div class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2" id="accountInfo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2" id = "accountInfo" >
                 <a href="profile.html">
-                    <img src="images/user_pic.png" alt="User Pic">
+                    <img src = "images/user_pic.png" alt="User Pic" width="80">
+                    <br>
                     JEFFY
-                </a>
+             </a>
+               
+                </div>
+                <div class="col-md-10">
+                    <a href="index.html"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
+                    <a href="login.html" id = "login">Logout</a>
             </div>
-            <div class="col-md-10">
-                <a href="index.html"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
-            </div>
+                </div>
         </div>
-    </div>
 </div>
 
-    <div class="row sidebar">
-        <div class="col-md-2 side_link">
-          <a href="index.html">Dashboard</a>
-          <a href="favorites.html" class="active">Favorites</a>
-          <a href="recent_stats.html">Recent Stats</a>
-        </div>
-        <div class="col-md-10" id="main_pane">
-            <div class="row">
-                <div class="col-md-12" id="time_selection">
-                    <div class="btn-group">
-                        <button class="btn btn-primary status">Past Week</button>
-                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-inverse">
-                            <li><a href="#">Past 24 Hours</a></li>
-                            <li><a href="#">Past Week</a></li>
-                            <li><a href="#">Past 4 Weeks</a></li>
-                        </ul>
-                    </div>
+<div class="row sidebar">
+    <div class="col-md-2 side_link">
+        <a href="index.html">Dashboard</a>
+        <a href="favorites.html" class="active">Favorites</a>
+        <a href="recent_stats.html">Recent Stats</a>
+    </div>
+    <div class="col-md-10" id="main_pane">
+        <div class="row">
+            <div class="col-md-12" id="time_selection">
+                <div class="btn-group">
+                    <button class="btn btn-primary status">Past Week</button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-inverse">
+                        <li><a href="#">Past 24 Hours</a></li>
+                        <li><a href="#">Past Week</a></li>
+                        <li><a href="#">Past 4 Weeks</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <br>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class = "widget">
                     <h3 id="list_heading">TOP 10 SONGS</h3>
                     <ol>
                         <li> ONE DANCE</li>
@@ -90,9 +93,9 @@
                         <p>Justin Timberlake</p>
                     </ol>
                 </div>
-
-                <div class="col-md-4">
-                    <br>
+            </div>
+            <div class="col-md-4">
+                <div class = "widget">
                     <h3 id="list_heading">TOP 10 ALBUMS</h3>
                     <ol>
                         <li> STARBOY</li>
@@ -117,42 +120,52 @@
                         <p>Original Motion Picture Soundtrack</p>
                     </ol>
                 </div>
-
-                <div class="col-md-4">
-                    <br>
-                    <h3 id = "list_heading">TOP 10 ARTISTS</h3>
-                    <ol >
-                        <li> THE WEEKND </li>
-                          <p> Illinois, USA </p>
-                        <li> ED SHEERAN </li>
-                          <p> California, USA </p>
-                        <li> THE CHAINSMOKERS </li>
-                          <p> Nevada, USA </p>
-                        <li> BRUNO MARS </li>
-                          <p> Montana, USA </p>
-                        <li> DRAKE </li>
-                          <p> Illinois, USA </p>
-                        <li> TWENTY ONE PILOTS </li>
-                          <p> California, USA </p>
-                        <li> ARIANA GRANDE </li>
-                          <p> New York, USA </p>
-                        <li> RIHANNA </li>
-                          <p> Texas, USA </p>
-                        <li> THE XXX </li>
-                          <p> Illinois, USA </p>
-                        <li> ADELE </li>
-                          <p> Florida, USA </p>
             </div>
-            <br>
-            <br>
-            <br>
-            <p><span class="title">Music source </span><span class="title"> Songs by decade </span></p>
-            <canvas id="MusicSource" width="500" height="300"></canvas>
-            <canvas id="SongsbyDecade" width="500" height="300"></canvas>
-            <br>
-            <br>
+            <div class="col-md-4">
+                <div class = "widget">
+                    <h3 id="list_heading">TOP 10 ARTISTS</h3>
+                    <ol>
+                        <li> THE WEEKND</li>
+                        <p> Illinois, USA </p>
+                        <li> ED SHEERAN</li>
+                        <p> California, USA </p>
+                        <li> THE CHAINSMOKERS</li>
+                        <p> Nevada, USA </p>
+                        <li> BRUNO MARS</li>
+                        <p> Montana, USA </p>
+                        <li> DRAKE</li>
+                        <p> Illinois, USA </p>
+                        <li> TWENTY ONE PILOTS</li>
+                        <p> California, USA </p>
+                        <li> ARIANA GRANDE</li>
+                        <p> New York, USA </p>
+                        <li> RIHANNA</li>
+                        <p> Texas, USA </p>
+                        <li> THE XXX</li>
+                        <p> Illinois, USA </p>
+                        <li> ADELE</li>
+                        <p> Florida, USA </p>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class = "widget" style = "height: 300px">
+                    <h3 id = "list_heading"> MUSIC SOURCE</h3>
+                    <canvas class="graph" id="MusicSource" style = "height: 80%; text-align: center;"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class = "widget" style = "height: 300px">
+                    <h3 id = "list_heading"> SONGS PER DECADE</h3>
+                    <canvas class="graph" id="SongsbyDecade" style = "height: 80%; text-align: center;"></canvas>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
@@ -198,7 +211,7 @@
             "decade": "2000's",
             "frequency": 36
         },
-    ]
+    ];
 
 
     var canvas = document.getElementById("SongsbyDecade"),
@@ -258,8 +271,8 @@
     });
 
     context.beginPath();
-    context.moveTo(-6.5, 0 + 0.5);
-    context.lineTo(0.5, 0 + 0.5);
+    context.moveTo(-6.5, 0.5);
+    context.lineTo(0.5, 0.5);
     context.lineTo(0.5, height + 0.5);
     context.lineTo(-6.5, height + 0.5);
     context.strokeStyle = "black";
@@ -298,7 +311,7 @@
             "frequency": 0.54
         },
 
-    ]
+    ];
 
 
     var canvas = document.getElementById("MusicSource"),
@@ -358,8 +371,8 @@
     });
 
     context.beginPath();
-    context.moveTo(-6.5, 0 + 0.5);
-    context.lineTo(0.5, 0 + 0.5);
+    context.moveTo(-6.5, 0.5);
+    context.lineTo(0.5, 0.5);
     context.lineTo(0.5, height + 0.5);
     context.lineTo(-6.5, height + 0.5);
     context.strokeStyle = "black";

@@ -37,10 +37,19 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12" id="main_pane">
-            Username: <input type="text" name="user"><br>
-            Password: <input type="text" name="pwd"><br>
-            <a href="index.html"><input type="submit" value="Submit"></a>
+        <div class="col-md-12 login" id="main_pane">
+            Username:
+            <label>
+                <input class="in" type="text" name="user">
+            </label>
+            <br>
+            Password:
+            <label>
+                <input class="in" type="text" name="pwd">
+            </label>
+            <br>
+            <br>
+            <a href="index.html"><input class="button" type="submit" value="Submit"></a>
         </div>
     </div>
 </div>
@@ -149,8 +158,8 @@
     });
 
     context.beginPath();
-    context.moveTo(-6.5, 0 + 0.5);
-    context.lineTo(0.5, 0 + 0.5);
+    context.moveTo(-6.5, 0.5);
+    context.lineTo(0.5, 0.5);
     context.lineTo(0.5, height + 0.5);
     context.lineTo(-6.5, height + 0.5);
     context.strokeStyle = "black";
@@ -249,8 +258,8 @@
     });
 
     context.beginPath();
-    context.moveTo(-6.5, 0 + 0.5);
-    context.lineTo(0.5, 0 + 0.5);
+    context.moveTo(-6.5, 0.5);
+    context.lineTo(0.5, 0.5);
     context.lineTo(0.5, height + 0.5);
     context.lineTo(-6.5, height + 0.5);
     context.strokeStyle = "black";
