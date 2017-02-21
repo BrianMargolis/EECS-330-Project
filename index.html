@@ -14,11 +14,11 @@
 
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
     <style type="text/css">
-    .title {
-        display: inline-block; 
-        width:50%; 
-        text-align:center;
-    }
+        .title {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+        }
     </style>
 
     <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>-->
@@ -28,12 +28,14 @@
 <div class="header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2" id = "accountInfo" >
-                <img src = "images/user_pic.png" alt="User Pic">
-                JEFFY
+            <div class="col-md-2" id="accountInfo">
+                <a href="profile.html">
+                    <img src="images/user_pic.png" alt="User Pic">
+                    JEFFY
+                </a>
             </div>
             <div class="col-md-10">
-                <a href="index.html"><img src = "images/Logo_Rough.png" alt = "soundscape"/></a>
+                <a href="index.html"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
             </div>
         </div>
     </div>
@@ -42,11 +44,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2" id="side_link">
-            <a href = "index.html"><font size="5">DASHBOARD</font></a>
+            <a href="index.html"><font size="5">DASHBOARD</font></a>
             <br>
-            <a href = "favorites.html"><font size="5">Favorites</font></a>
+            <a href="favorites.html"><font size="5">Favorites</font></a>
             <br>
-            <a href = "recent_stats.html"><font size="5">Recent Stats</font></a>
+            <a href="recent_stats.html"><font size="5">Recent Stats</font></a>
         </div>
         <div class="col-md-10" id="main_pane">
             <div class="row">
@@ -66,18 +68,19 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                <img src = "images/songsOverTime_pastWeek.png" alt="songsOverTime_pastWeek" height = "300" style = "padding-left: 50px;">
+                    <img src="images/songsOverTime_pastWeek.png" alt="songsOverTime_pastWeek" height="300"
+                         style="padding-left: 50px;">
                 </div>
-             
+
             </div>
-            <p> <span class="title">Music source </span><span class="title"> Songs by genre </span></p>
+            <p><span class="title">Music source </span><span class="title"> Songs by genre </span></p>
             <canvas id="MusicSource" width="500" height="300"></canvas>
             <canvas id="SongsbyGenre" width="500" height="300"></canvas>
             <br>
             <br>
             <br>
             <div class="row">
-                <div class = "col-md-1"></div>
+                <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-12, big_stat">
@@ -93,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
             <br>
             <br>
@@ -109,214 +112,222 @@
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
-var data = [
-  {
-    "genre": "Rock",
-    "frequency": 114
-  },
-  {
-    "genre": "Pop",
-    "frequency": 46
-  },
-  {
-    "genre": "Latin",
-    "frequency": 10
-  },
-  {
-    "genre": "Alternative",
-    "frequency": 76
-  },
-  {
-    "genre": "Classical",
-    "frequency": 67
-  },
-   {
-    "genre": "Jazz",
-    "frequency": 251
-  },
-   {
-    "genre": "Techno",
-    "frequency": 59
-  },
-   {
-    "genre": "Raggae",
-    "frequency": 55
-  },
-   {
-    "genre": "Heavy Metal",
-    "frequency": 27
-  },
-]
+    var data = [
+        {
+            "genre": "Rock",
+            "frequency": 114
+        },
+        {
+            "genre": "Pop",
+            "frequency": 46
+        },
+        {
+            "genre": "Latin",
+            "frequency": 10
+        },
+        {
+            "genre": "Alternative",
+            "frequency": 76
+        },
+        {
+            "genre": "Classical",
+            "frequency": 67
+        },
+        {
+            "genre": "Jazz",
+            "frequency": 251
+        },
+        {
+            "genre": "Techno",
+            "frequency": 59
+        },
+        {
+            "genre": "Raggae",
+            "frequency": 55
+        },
+        {
+            "genre": "Heavy Metal",
+            "frequency": 27
+        },
+    ]
 
 
-var canvas = document.getElementById("SongsbyGenre"),
-    context = canvas.getContext("2d");
+    var canvas = document.getElementById("SongsbyGenre"),
+        context = canvas.getContext("2d");
 
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = canvas.width - margin.left - margin.right,
-    height = canvas.height - margin.top - margin.bottom;
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+        width = canvas.width - margin.left - margin.right,
+        height = canvas.height - margin.top - margin.bottom;
 
-var x = d3.scaleBand()
-    .rangeRound([0, width])
-    .padding(0.1);
+    var x = d3.scaleBand()
+        .rangeRound([0, width])
+        .padding(0.1);
 
-var y = d3.scaleLinear()
-    .rangeRound([height, 0]);
+    var y = d3.scaleLinear()
+        .rangeRound([height, 0]);
 
-context.translate(margin.left, margin.top);
+    context.translate(margin.left, margin.top);
 
 
-  x.domain(data.map(function(d) { return d.genre; }));
-  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+    x.domain(data.map(function (d) {
+        return d.genre;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.frequency;
+    })]);
 
-  var yTickCount = 10,
-      yTicks = y.ticks(yTickCount),
-      yTickFormat = y.tickFormat(yTickCount);
+    var yTickCount = 10,
+        yTicks = y.ticks(yTickCount),
+        yTickFormat = y.tickFormat(yTickCount);
 
-  context.beginPath();
-  x.domain().forEach(function(d) {
-    context.moveTo(x(d) + x.bandwidth() / 2, height);
-    context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
-  });
-  context.strokeStyle = "black";
-  context.stroke();
+    context.beginPath();
+    x.domain().forEach(function (d) {
+        context.moveTo(x(d) + x.bandwidth() / 2, height);
+        context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
+    });
+    context.strokeStyle = "black";
+    context.stroke();
 
-  context.textAlign = "center";
-  context.textBaseline = "top";
-  x.domain().forEach(function(d) {
-    context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
-  });
+    context.textAlign = "center";
+    context.textBaseline = "top";
+    x.domain().forEach(function (d) {
+        context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
+    });
 
-  context.beginPath();
-  yTicks.forEach(function(d) {
-    context.moveTo(0, y(d) + 0.5);
-    context.lineTo(-6, y(d) + 0.5);
-  });
-  context.strokeStyle = "black";
-  context.stroke();
+    context.beginPath();
+    yTicks.forEach(function (d) {
+        context.moveTo(0, y(d) + 0.5);
+        context.lineTo(-6, y(d) + 0.5);
+    });
+    context.strokeStyle = "black";
+    context.stroke();
 
-  context.textAlign = "right";
-  context.textBaseline = "middle";
-  yTicks.forEach(function(d) {
-    context.fillText(yTickFormat(d), -9, y(d));
-  });
+    context.textAlign = "right";
+    context.textBaseline = "middle";
+    yTicks.forEach(function (d) {
+        context.fillText(yTickFormat(d), -9, y(d));
+    });
 
-  context.beginPath();
-  context.moveTo(-6.5, 0 + 0.5);
-  context.lineTo(0.5, 0 + 0.5);
-  context.lineTo(0.5, height + 0.5);
-  context.lineTo(-6.5, height + 0.5);
-  context.strokeStyle = "black";
-  context.stroke();
+    context.beginPath();
+    context.moveTo(-6.5, 0 + 0.5);
+    context.lineTo(0.5, 0 + 0.5);
+    context.lineTo(0.5, height + 0.5);
+    context.lineTo(-6.5, height + 0.5);
+    context.strokeStyle = "black";
+    context.stroke();
 
-  context.save();
-  context.rotate(-Math.PI / 2);
-  context.textAlign = "right";
-  context.textBaseline = "top";
-  context.font = "bold 10px sans-serif";
-  context.fillText("Number of songs", -10, 10);
-  context.restore();
+    context.save();
+    context.rotate(-Math.PI / 2);
+    context.textAlign = "right";
+    context.textBaseline = "top";
+    context.font = "bold 10px sans-serif";
+    context.fillText("Number of songs", -10, 10);
+    context.restore();
 
-  context.fillStyle = d3.rgb(80, 237, 218, 1);
-  data.forEach(function(d) {
-    context.fillRect(x(d.genre), y(d.frequency), x.bandwidth(), height - y(d.frequency));
-  });
+    context.fillStyle = d3.rgb(80, 237, 218, 1);
+    data.forEach(function (d) {
+        context.fillRect(x(d.genre), y(d.frequency), x.bandwidth(), height - y(d.frequency));
+    });
 
 </script>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
-var data = [
-  {
-    "source": "Apple Music",
-    "frequency": 0.06
+    var data = [
+        {
+            "source": "Apple Music",
+            "frequency": 0.06
 
-  },
-  {
-    "source": "Pandora",
-    "frequency": 0.41
-  },
-  {
-    "source": "Spotify",
-    "frequency": 0.54
-  },
-  
-]
+        },
+        {
+            "source": "Pandora",
+            "frequency": 0.41
+        },
+        {
+            "source": "Spotify",
+            "frequency": 0.54
+        },
 
-
-var canvas = document.getElementById("MusicSource"),
-    context = canvas.getContext("2d");
-
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = canvas.width - margin.left - margin.right,
-    height = canvas.height - margin.top - margin.bottom;
-
-var x = d3.scaleBand()
-    .rangeRound([0, width])
-    .padding(0.1);
-
-var y = d3.scaleLinear()
-    .rangeRound([height, 0]);
-
-context.translate(margin.left, margin.top);
+    ]
 
 
-  x.domain(data.map(function(d) { return d.source; }));
-  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+    var canvas = document.getElementById("MusicSource"),
+        context = canvas.getContext("2d");
 
-  var yTickCount = 10,
-      yTicks = y.ticks(yTickCount),
-      yTickFormat = y.tickFormat(yTickCount, "%");
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+        width = canvas.width - margin.left - margin.right,
+        height = canvas.height - margin.top - margin.bottom;
 
-  context.beginPath();
-  x.domain().forEach(function(d) {
-    context.moveTo(x(d) + x.bandwidth() / 2, height);
-    context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
-  });
-  context.strokeStyle = "black";
-  context.stroke();
+    var x = d3.scaleBand()
+        .rangeRound([0, width])
+        .padding(0.1);
 
-  context.textAlign = "center";
-  context.textBaseline = "top";
-  x.domain().forEach(function(d) {
-    context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
-  });
+    var y = d3.scaleLinear()
+        .rangeRound([height, 0]);
 
-  context.beginPath();
-  yTicks.forEach(function(d) {
-    context.moveTo(0, y(d) + 0.5);
-    context.lineTo(-6, y(d) + 0.5);
-  });
-  context.strokeStyle = "black";
-  context.stroke();
+    context.translate(margin.left, margin.top);
 
-  context.textAlign = "right";
-  context.textBaseline = "middle";
-  yTicks.forEach(function(d) {
-    context.fillText(yTickFormat(d), -9, y(d));
-  });
 
-  context.beginPath();
-  context.moveTo(-6.5, 0 + 0.5);
-  context.lineTo(0.5, 0 + 0.5);
-  context.lineTo(0.5, height + 0.5);
-  context.lineTo(-6.5, height + 0.5);
-  context.strokeStyle = "black";
-  context.stroke();
+    x.domain(data.map(function (d) {
+        return d.source;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.frequency;
+    })]);
 
-  context.save();
-  context.rotate(-Math.PI / 2);
-  context.textAlign = "right";
-  context.textBaseline = "top";
-  context.font = "bold 10px sans-serif";
-  context.fillText("Percentage", -10, 10);
-  context.restore();
+    var yTickCount = 10,
+        yTicks = y.ticks(yTickCount),
+        yTickFormat = y.tickFormat(yTickCount, "%");
 
-  context.fillStyle = d3.rgb(80, 237, 218, 1);
-  data.forEach(function(d) {
-    context.fillRect(x(d.source), y(d.frequency), x.bandwidth(), height - y(d.frequency));
-  });
+    context.beginPath();
+    x.domain().forEach(function (d) {
+        context.moveTo(x(d) + x.bandwidth() / 2, height);
+        context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
+    });
+    context.strokeStyle = "black";
+    context.stroke();
+
+    context.textAlign = "center";
+    context.textBaseline = "top";
+    x.domain().forEach(function (d) {
+        context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
+    });
+
+    context.beginPath();
+    yTicks.forEach(function (d) {
+        context.moveTo(0, y(d) + 0.5);
+        context.lineTo(-6, y(d) + 0.5);
+    });
+    context.strokeStyle = "black";
+    context.stroke();
+
+    context.textAlign = "right";
+    context.textBaseline = "middle";
+    yTicks.forEach(function (d) {
+        context.fillText(yTickFormat(d), -9, y(d));
+    });
+
+    context.beginPath();
+    context.moveTo(-6.5, 0 + 0.5);
+    context.lineTo(0.5, 0 + 0.5);
+    context.lineTo(0.5, height + 0.5);
+    context.lineTo(-6.5, height + 0.5);
+    context.strokeStyle = "black";
+    context.stroke();
+
+    context.save();
+    context.rotate(-Math.PI / 2);
+    context.textAlign = "right";
+    context.textBaseline = "top";
+    context.font = "bold 10px sans-serif";
+    context.fillText("Percentage", -10, 10);
+    context.restore();
+
+    context.fillStyle = d3.rgb(80, 237, 218, 1);
+    data.forEach(function (d) {
+        context.fillRect(x(d.source), y(d.frequency), x.bandwidth(), height - y(d.frequency));
+    });
 
 </script>
 </html>

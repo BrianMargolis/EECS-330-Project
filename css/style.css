@@ -1,6 +1,6 @@
 * {
-	font-family: Verdana, Sans-serif;
-	color: rgba(80, 237, 218, 1);
+    font-family: Verdana, Sans-serif;
+    color: rgba(80, 237, 218, 1);
 
 }
 
@@ -10,9 +10,9 @@
     padding: 10px;
 }
 
-#side_link *{
-	color: rgba(47, 48, 48, 1);
-	height: 100%;
+#side_link * {
+    color: rgba(47, 48, 48, 1);
+    height: 100%;
 }
 
 #main_pane {
@@ -20,7 +20,7 @@
 }
 
 #time_selection {
-	padding: 20px;
+    padding: 20px;
 }
 
 #add_chart {
@@ -32,25 +32,25 @@
 }
 
 #accountInfo {
-	text-align: left;
+    text-align: left;
 }
 
 #big_graph {
-	text-align: center;
+    text-align: center;
 }
 
 .big_stat {
-	color: rgb(219, 221, 224);
-	text-align: center;
-	padding-bottom: 30px;
+    color: rgb(219, 221, 224);
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 #list_heading {
-	color: rgb(219, 221, 224);
-	border-bottom: 5px;
+    color: rgb(219, 221, 224);
+    border-bottom: 5px;
 }
 
 ol p {
-	color: rgb(219, 221, 224);
-	font-style: italic;
+    color: rgb(219, 221, 224);
+    font-style: italic;
 }

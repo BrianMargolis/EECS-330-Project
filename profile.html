@@ -46,84 +46,17 @@
         <div class="col-md-2" id="side_link">
             <a href="index.html"><font size="5">Dashboard</font></a>
             <br>
-            <a href="favorites.html"><font size="5">Favorites</font></a>
+            <a href="favorites.html"><font size="5">FAVORITES</font></a>
             <br>
-            <a href="recent_stats.html"><font size="5">RECENT STATS</font></a>
+            <a href="recent_stats.html"><font size="5">Recent Stats</font></a>
         </div>
         <div class="col-md-10" id="main_pane">
-            <div class="row">
-                <div class="col-md-12" id="time_selection">
-                    <div class="btn-group">
-                        <button class="btn btn-primary status">Past Week</button>
-                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-inverse">
-                            <li><a href="#">Past 24 Hours</a></li>
-                            <li><a href="#">Past Week</a></li>
-                            <li><a href="#">Past 4 Weeks</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <br>
-                    <img src="images/timeOfDay_pastWeek.png" alt="timeOfDay_pastWeek" height="150"
-                         style="display:block;">
-                </div>
-            </div>
+            Name: Jeffy Clurk
             <br>
+            Email: jeffyclurk@u.northwestern.edu
             <br>
-            <p><span class="title">  </span><span class="title"> Songs by genre </span></p>
-            <canvas id="SongsbyGenre" width="500" height="300"></canvas>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>
-                        TOTAL SONGS
-                        <div style="text-align:center"><font size="30">394</font></div>
-                        &#8593 2% from last week
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br> TOTAL UNIQUE SONGS
-                        <div style="text-align:center"><font size="30">100</font></div>
-                        &#8595 7% from last week
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>TOTAL ALBUMS
-                        <div style="text-align:center"><font size="30">84</font></div>
-                        &#8595 11% from last week
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>TOTAL ARTISTS
-                        <div style="text-align:center"><font size="30">25</font></div>
-                        &#8593 10% from last week
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12, big_stat">
-                        <br>MINUTES LISTENED
-                        <div style="text-align:center"><font size="30">700</font></div>
-                        &#8593 20% from last week
-                    </div>
-                </div>
-            </div>
         </div>
-        <br>
-        <br>
     </div>
-</div>
 </div>
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -131,45 +64,49 @@
 
     var data = [
         {
-            "genre": "Rock",
-            "frequency": 114
+            "decade": "20's",
+            "frequency": 18
         },
         {
-            "genre": "Pop",
-            "frequency": 46
+            "decade": "30's",
+            "frequency": 8
         },
         {
-            "genre": "Latin",
-            "frequency": 10
+            "decade": "40's",
+            "frequency": 1
         },
         {
-            "genre": "Alternative",
-            "frequency": 76
-        },
-        {
-            "genre": "Classical",
+            "decade": "50's",
             "frequency": 67
         },
         {
-            "genre": "Jazz",
+            "decade": "60's",
+            "frequency": 49
+        },
+        {
+            "decade": "70's",
+            "frequency": 204
+        },
+        {
+            "decade": "80's",
             "frequency": 251
         },
         {
-            "genre": "Techno",
-            "frequency": 59
-        },
-        {
-            "genre": "Raggae",
+            "decade": "90's",
             "frequency": 55
         },
         {
-            "genre": "Heavy Metal",
-            "frequency": 27
+            "decade": "2000's",
+            "frequency": 16
+        },
+        {
+            "decade": "2000's",
+            "frequency": 36
         },
     ]
 
 
-    var canvas = document.getElementById("SongsbyGenre"),
+    var canvas = document.getElementById("SongsbyDecade"),
         context = canvas.getContext("2d");
 
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -187,7 +124,7 @@
 
 
     x.domain(data.map(function (d) {
-        return d.genre;
+        return d.decade;
     }));
     y.domain([0, d3.max(data, function (d) {
         return d.frequency;
@@ -243,7 +180,107 @@
 
     context.fillStyle = d3.rgb(80, 237, 218, 1);
     data.forEach(function (d) {
-        context.fillRect(x(d.genre), y(d.frequency), x.bandwidth(), height - y(d.frequency));
+        context.fillRect(x(d.decade), y(d.frequency), x.bandwidth(), height - y(d.frequency));
+    });
+
+</script>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+    var data = [
+        {
+            "source": "Apple Music",
+            "frequency": 0.06
+
+        },
+        {
+            "source": "Pandora",
+            "frequency": 0.41
+        },
+        {
+            "source": "Spotify",
+            "frequency": 0.54
+        },
+
+    ]
+
+
+    var canvas = document.getElementById("MusicSource"),
+        context = canvas.getContext("2d");
+
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+        width = canvas.width - margin.left - margin.right,
+        height = canvas.height - margin.top - margin.bottom;
+
+    var x = d3.scaleBand()
+        .rangeRound([0, width])
+        .padding(0.1);
+
+    var y = d3.scaleLinear()
+        .rangeRound([height, 0]);
+
+    context.translate(margin.left, margin.top);
+
+
+    x.domain(data.map(function (d) {
+        return d.source;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.frequency;
+    })]);
+
+    var yTickCount = 10,
+        yTicks = y.ticks(yTickCount),
+        yTickFormat = y.tickFormat(yTickCount, "%");
+
+    context.beginPath();
+    x.domain().forEach(function (d) {
+        context.moveTo(x(d) + x.bandwidth() / 2, height);
+        context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
+    });
+    context.strokeStyle = "black";
+    context.stroke();
+
+    context.textAlign = "center";
+    context.textBaseline = "top";
+    x.domain().forEach(function (d) {
+        context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
+    });
+
+    context.beginPath();
+    yTicks.forEach(function (d) {
+        context.moveTo(0, y(d) + 0.5);
+        context.lineTo(-6, y(d) + 0.5);
+    });
+    context.strokeStyle = "black";
+    context.stroke();
+
+    context.textAlign = "right";
+    context.textBaseline = "middle";
+    yTicks.forEach(function (d) {
+        context.fillText(yTickFormat(d), -9, y(d));
+    });
+
+    context.beginPath();
+    context.moveTo(-6.5, 0 + 0.5);
+    context.lineTo(0.5, 0 + 0.5);
+    context.lineTo(0.5, height + 0.5);
+    context.lineTo(-6.5, height + 0.5);
+    context.strokeStyle = "black";
+    context.stroke();
+
+    context.save();
+    context.rotate(-Math.PI / 2);
+    context.textAlign = "right";
+    context.textBaseline = "top";
+    context.font = "bold 10px sans-serif";
+    context.fillText("Percentage", -10, 10);
+    context.restore();
+
+    context.fillStyle = d3.rgb(80, 237, 218, 1);
+    data.forEach(function (d) {
+        context.fillRect(x(d.source), y(d.frequency), x.bandwidth(), height - y(d.frequency));
     });
 
 </script>
