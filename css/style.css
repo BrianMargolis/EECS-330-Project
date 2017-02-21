@@ -1,69 +1,69 @@
 * {
     font-family: Verdana, sans-serif;
-    color: rgba(80, 237, 218, 1);
+    color: #0bdbdb;
 
 }
 
 body {
 
-    background-color: rgba(47, 48, 48, 1);
+    background-color: #2f3030;
 }
 
 .header * {
-    background-color: rgba(47, 48, 48, 1);
+    background-color: #2f3030;
     text-align: center;
     padding: 5px;
 }
 
 .sidebar {
-    background-color: rgba(47, 48, 48, 1);
+    background-color: #2f3030;
     width: 100%;
     text-align: center;
 }
 
 .side_link {
-    background-color: rgba(47, 48, 48, 1);
+    background-color: #2f3030;
     text-align: center;
 }
 
 .side_link a {
-    background-color: rgba(107, 107, 107, 1); /* Grey background color */
+    background-color: #6b6b6b; /* Grey background color */
     width: 100%;
     font-size: 140%;
     padding-top: 30px;
-    color: rgba(80, 237, 218, 1);
+    color: #0bdbdb;
     display: block;
     text-decoration: none;
 }
 
 #dark {
-    background-color: rgba(60, 60, 60, 1);
+    background-color: #3c3c3c;
 }
 
 #light {
-    background-color: rgba(107, 107, 107, 1);
+    background-color: #6b6b6b;
 }
 
 /* Add a background color on hover */
 .side_link a:hover {
-    background-color: rgb(150, 150, 150);
+    background-color: #969696;
 }
 
 /* Add a dark color to the "active/current" link */
 .side_link a.active {
-    background-color: rgba(60, 60, 60, 1);
+    background-color: #3c3c3c;
 
 }
 
 #main_pane {
-    background-color: rgba(107, 107, 107, 1);
+    background-color: #6b6b6b;
 }
 
 #time_selection {
     padding: 20px;
 }
 
-.btn-group {
+.btn {
     display: block;
 }
 
@@ -81,26 +81,37 @@ body {
 }
 
 .big_stat {
-    color: rgb(219, 221, 224);
+    color: #dbdde0;
     text-align: center;
     padding-bottom: 30px;
 }
 
 .list_heading {
-    color: rgb(219, 221, 224);
+    color: #dbdde0;
     border-bottom: 5px;
 }
 
 ol p {
-    color: rgb(219, 221, 224);
+    color: #dbdde0;
     font-style: italic;
 }
 
 .graph_title {
     font-weight: bold;
-    color: white;
+    color: #F5F5F5;
 }
 
 .graph {
     width: 420px;
+}
+
+.login {
+    text-align: center;
+    color: #F5F5F5;
+}
+.in {
+    background-color: #f5f5f5;
+}
+.button {
+    color: #0bdbdb;
 }
