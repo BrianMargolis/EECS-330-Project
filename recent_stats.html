@@ -32,7 +32,9 @@
                 <a href="profile.html">
                     <img src="images/user_pic.png" alt="User Pic" width="80">
                     <br>
-                    JEFFY
+                    <div id="username">
+                        JEFFY
+                    </div>
                 </a>
             </div>
             <div class="col-md-8">
@@ -243,7 +245,7 @@
     context.fillText("Number of songs", -10, 10);
     context.restore();
 
-    context.fillStyle = d3.rgb(80, 237, 218, 1);
+    context.fillStyle = d3.rgb(11, 219, 219, 1)
     data.forEach(function (d) {
         context.fillRect(x(d.genre), y(d.frequency), x.bandwidth(), height - y(d.frequency));
     });
