@@ -79,7 +79,7 @@
     padding-bottom: 30px;
 }
 
-#list_heading {
+.list_heading {
     color: rgb(219, 221, 224);
     border-bottom: 5px;
 }
@@ -95,5 +95,5 @@ ol p {
 }
 
 .graph {
-    width: 320px;
+    width: 420px;
 }
