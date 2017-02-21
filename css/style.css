@@ -1,70 +1,68 @@
 * {
-    font-family: Verdana, sans-serif;
-    color: #0bdbdb;
-
+    font-family: Verdana, Sans-serif;
+    color: rgba(80, 237, 218, 1);
+    box-sizing: border-box;
 }
 
 body {
-
-    background-color: #2f3030;
+	background-color: rgba(47,48,48,1);
 }
 
 .header * {
-    background-color: #2f3030;
+    background-color: rgba(47, 48, 48, 1);
     text-align: center;
     padding: 5px;
 }
 
-.sidebar {
-    background-color: #2f3030;
-    width: 100%;
-    text-align: center;
+.sidebar{
+	background-color: rgba(47, 48, 48, 1);
+	width: 100%;
+	text-align:center;
 }
 
-.side_link {
-    background-color: #2f3030;
-    text-align: center;
+.side_link a{
+	background-color: rgba(107, 107, 107, 1); /* Grey background color */
+	width: 100%;
+	font-size: 140%;
+	padding-top: 30px;
+	color: rgba(80, 237, 218, 1);
+	font-family: Verdana, Sans-serif;
+	display: block;
+	text-decoration: none;
 }
 
-.side_link a {
-    background-color: #6b6b6b; /* Grey background color */
-    width: 100%;
-    font-size: 140%;
-    padding-top: 30px;
-    color: #0bdbdb;
-    display: block;
-    text-decoration: none;
+.widget{
+	background-color: rgba(107, 107, 107, 1);
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 30px;
 }
 
-#dark {
-    background-color: #3c3c3c;
+#dark{
+	background-color: rgba(60, 60, 60, 1);
 }
-
-#light {
-    background-color: #6b6b6b;
+#light{
+	background-color: rgba(107, 107, 107, 1);
 }
 
 /* Add a background color on hover */
 .side_link a:hover {
-    background-color: #969696;
+    background-color: rgb(150,150,150);
 }
 
-/* Add a dark color to the "active/current" link */
+/* Add a green color to the "active/current" link */
 .side_link a.active {
-    background-color: #3c3c3c;
+    background-color: rgba(60, 60, 60, 1); 
 
 }
-
 #main_pane {
-    background-color: #6b6b6b;
+    background-color: rgba(47, 48, 48, 1);
 }
 
 #time_selection {
     padding: 20px;
-}
-
-.btn {
-    display: block;
+    text-align: left;
 }
 
 #add_chart {
@@ -72,8 +70,12 @@ body {
 }
 
 #accountInfo {
+	text-align: center;
+	font-size: 120%;
+}
+
+#accountInfo {
     text-align: center;
-    font-size: 120%;
 }
 
 #big_graph {
@@ -81,28 +83,24 @@ body {
 }
 
 .big_stat {
-    color: #dbdde0;
+    color: rgb(219, 221, 224);
     text-align: center;
-    padding-bottom: 30px;
 }
 
-.list_heading {
-    color: #dbdde0;
+#list_heading {
+    color: rgb(219, 221, 224);
     border-bottom: 5px;
+    text-align: center;
+}
+
+#login {
+	position: relative;
+	left: 380px;
 }
 
 ol p {
-    color: #dbdde0;
-    font-style: italic;
-}
-
-.graph_title {
-    font-weight: bold;
-    color: #F5F5F5;
-}
-
-.graph {
-    width: 420px;
+	color: rgb(219, 221, 224);
+	font-style: italic;
 }
 
 .login {

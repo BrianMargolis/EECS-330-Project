@@ -26,27 +26,26 @@
 <body onload="main()">
 
 <div class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2" id="accountInfo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2" id = "accountInfo" >
                 <a href="profile.html">
-                    <img src="images/user_pic.png" alt="User Pic" width="80">
+                    <img src = "images/user_pic.png" alt="User Pic" width="80">
                     <br>
-                    <div id="username">
-                        JEFFY
-                    </div>
-                </a>
+                    JEFFY
+             </a>
+               
+                </div>
+                <div class="col-md-10">
+                    <a href="index.html"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
+                    <a href="login.html" id = "login">Logout</a>
             </div>
-            <div class="col-md-8">
-                <a href="index.html"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
+                </div>
             </div>
-            <div class="col-md-2">
-                <a href="login.html">Logout</a>
-            </div>
-        </div>
-    </div>
 </div>
-<div class="row">
+
+
+<div class="row sidebar">
     <div class="col-md-2 side_link">
         <a href="index.html">Dashboard</a>
         <a href="favorites.html">Favorites</a>
@@ -69,65 +68,60 @@
             </div>
         </div>
 
-        <div class="graph_title">Number of Songs vs Time of Day</div>
-        <div id="curve_chart"></div>
-          
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="big_stat">
-                            <br>
-                            TOTAL SONGS
-                            <div style="text-align:center"><font size="30">394</font></div>
-                            &#8593 2% from last week
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="big_stat">
-                            <br>TOTAL ALBUMS
-                            <div style="text-align:center"><font size="30">84</font></div>
-                            &#8595 11% from last week
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="big_stat">
-                            <br>MINUTES LISTENED
-                            <div style="text-align:center"><font size="30">700</font></div>
-                            &#8593 20% from last week
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="big_stat">
-                            <br> TOTAL UNIQUE SONGS
-                            <div style="text-align:center"><font size="30">100</font></div>
-                            &#8595 7% from last week
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="big_stat">
-                            <br>TOTAL ARTISTS
-                            <div style="text-align:center"><font size="30">25</font></div>
-                            &#8593 10% from last week
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-
-                    </div>
+        <div class = "row">
+            <div class = "col-md-8">
+                <div class = "widget" style = "height: 400px">
+                    <div id="curve_chart", style="height: 80%"></div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="graph_title">Songs By Genre</div>
-                <canvas id="SongsbyGenre" width="500" height="300"></canvas>
+            <div class = "col-md-4">
+               <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL SONGS</h3>
+                        <div style="text-align:center"><font size="30">394</font></div>
+                        <h5 id = "list_heading">&#8593 2% from last week</h5>
+                </div>
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL UNIQUE SONGS</h3>
+                        <div style="text-align:center"><font size="30">100</font></div>
+                        <h5 id = "list_heading">&#8595 7% from last week</h5>
+                </div>
             </div>
         </div>
 
-    </div>
-    <br>
-    <br>
+        <div class = "row">
+            <div class = "col-md-3">
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL ALBUMS</h3>
+                        <div style="text-align:center"><font size="30">394</font></div>
+                        <h5 id = "list_heading">&#8595 11% from last week</h5>
+                </div>
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> TOTAL ARTISTS</h3>
+                        <div style="text-align:center"><font size="30">100</font></div>
+                        <h5 id = "list_heading">&#8593 10% from last week</h5>
+                </div>
+            </div>
+            <div class = "col-md-3">
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> MINUTES LISTENED</h3>
+                        <div style="text-align:center"><font size="30">394</font></div>
+                        <h5 id = "list_heading">&#8593 20% from last week</h5>
+                </div>
+                <div class="big_stat, widget" style = "height: 185px;" >
+                        <h3 id = "list_heading"> PERCENT ON PHONE</h3>
+                        <div style="text-align:center"><font size="30">80%</font></div>
+                        <h5 id = "list_heading">&#8593 15% from last week</h5>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <div class = "widget" style = "height: 400px">
+                    <h3 id = "list_heading"> SONGS BY GENRE</h3>
+                    <canvas id="SongsbyGenre" width="500" height="300">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>  
 </div>
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -245,7 +239,7 @@
     context.fillText("Number of songs", -10, 10);
     context.restore();
 
-    context.fillStyle = d3.rgb(11, 219, 219, 1)
+    context.fillStyle = d3.rgb(80, 237, 218, 1);
     data.forEach(function (d) {
         context.fillRect(x(d.genre), y(d.frequency), x.bandwidth(), height - y(d.frequency));
     });
@@ -299,5 +293,8 @@
         chart.draw(data, options);
     }
 </script>
+<body>
+    <div id="curve_chart" style="width: 900px; height: 50px"></div>
+</body>
 
 </html>
