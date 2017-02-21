@@ -7,12 +7,40 @@
 .header * {
     background-color: rgba(47, 48, 48, 1);
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
-#side_link *{
-	color: rgba(47, 48, 48, 1);
-	height: 100%;
+.sidebar{
+	background-color: rgba(47, 48, 48, 1);
+	width: 100%;
+	text-align:center;
+}
+
+.side_link a{
+	background-color: rgba(107, 107, 107, 1); /* Grey background color */
+	width: 100%;
+	font-size: 140%;
+	padding-top: 30px;
+	color: rgba(80, 237, 218, 1);
+	font-family: Verdana, Sans-serif;
+	display: block;
+	text-decoration: none;
+}
+#dark{
+	background-color: rgba(60, 60, 60, 1);
+}
+#light{
+	background-color: rgba(107, 107, 107, 1);
+}
+
+/* Add a background color on hover */
+.side_link a:hover {
+    background-color: rgb(150,150,150);
+}
+
+/* Add a green color to the "active/current" link */
+.side_link a.active {
+    background-color: rgba(60, 60, 60, 1); 
 }
 
 #main_pane {
@@ -27,12 +55,15 @@
     text-align: center;
 }
 
-#side_link a {
-    font-size: 32px;
+#accountInfo {
+	text-align: center;
+	font-size: 120%;
 }
 
-#accountInfo {
-	text-align: left;
+#curve_chart{
+	height: 2%;
+	background-color: rgba(47, 48, 48, 1);
+	stroke-color: 'red';
 }
 
 #big_graph {
