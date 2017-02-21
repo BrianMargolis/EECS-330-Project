@@ -10,7 +10,6 @@
     padding: 5px;
 }
 
-<<<<<<< HEAD
 .sidebar{
 	background-color: rgba(47, 48, 48, 1);
 	width: 100%;
@@ -42,13 +41,8 @@
 /* Add a green color to the "active/current" link */
 .side_link a.active {
     background-color: rgba(60, 60, 60, 1); 
-=======
-#side_link * {
-    color: rgba(47, 48, 48, 1);
-    height: 100%;
->>>>>>> origin/master
-}
 
+}
 #main_pane {
     background-color: rgba(107, 107, 107, 1);
 }
@@ -66,15 +60,8 @@
 	font-size: 120%;
 }
 
-<<<<<<< HEAD
-#curve_chart{
-	height: 2%;
-	background-color: rgba(47, 48, 48, 1);
-	stroke-color: 'red';
-=======
 #accountInfo {
-    text-align: left;
->>>>>>> origin/master
+    text-align: center;
 }
 
 #big_graph {
@@ -93,12 +80,7 @@
 }
 
 ol p {
-<<<<<<< HEAD
 	color: rgb(219, 221, 224);
 	font-style: italic;
 }
-=======
-    color: rgb(219, 221, 224);
-    font-style: italic;
-}
->>>>>>> origin/master
+
