@@ -46,9 +46,9 @@
 
 <div class="row sidebar">
     <div class="col-md-2 side_link">
-        <a href="index.html">Dashboard</a>
-        <a href="favorites.html" class="active">Favorites</a>
-        <a href="recent_stats.html">Recent Stats</a>
+        <a href="indexWeek.html">Dashboard</a>
+        <a href="favoritesWeek.html" class="active">Favorites</a>
+        <a href="recent_statsWeek.html">Recent Stats</a>
     </div>
     <div class="col-md-10" id="main_pane">
         <div class="row">
@@ -280,9 +280,10 @@
 
     context.save();
     context.rotate(-Math.PI / 2);
+    context.translate(0-20, 0-margin.left-1);
     context.textAlign = "right";
-    context.textBaseline = "top";
-    context.font = "bold 10px sans-serif";
+    context.textBaseline = "bottom";
+    context.font = "10px sans-serif";
     context.fillText("Number of songs", -10, 10);
     context.restore();
 
@@ -380,9 +381,10 @@
 
     context.save();
     context.rotate(-Math.PI / 2);
+    context.translate(0-20, 0-margin.left-1);
     context.textAlign = "right";
-    context.textBaseline = "top";
-    context.font = "bold 10px sans-serif";
+    context.textBaseline = "bottom";
+    context.font = "10px sans-serif";
     context.fillText("Percentage", -10, 10);
     context.restore();
 

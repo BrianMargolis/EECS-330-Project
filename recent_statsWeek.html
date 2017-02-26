@@ -47,9 +47,9 @@
 
 <div class="row sidebar">
     <div class="col-md-2 side_link">
-        <a href="index.html">Dashboard</a>
-        <a href="favorites.html">Favorites</a>
-        <a href="recent_stats.html" class="active">Recent Stats</a>
+        <a href="indexWeek.html">Dashboard</a>
+        <a href="favoritesWeek.html">Favorites</a>
+        <a href="recent_statsWeek.html" class="active">Recent Stats</a>
     </div>
     <div class="col-md-10" id="main_pane">
         <div class="row">
@@ -282,6 +282,12 @@
         ]);
 
         var options = {
+            title: 'SONGS PER TIME OF DAY',
+            titleTextStyle:{
+            color:'#dbdde0',
+            fontSize: 23,
+            bold: false
+          },
             curveType: 'function',
             legend: {position: 'bottom'},
             colors: ['#50edda'],

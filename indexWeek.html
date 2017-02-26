@@ -40,11 +40,17 @@
         ]);
 
         var options = {
-          title: 'Songs per day ',
+          title: 'SONGS PER DAY ',
+		  titleTextStyle:{
+		  	color:'#dbdde0',
+		  	fontSize: 23,
+		  	bold: false
+		  },
           curveType: 'function',
           legend: { position: 'bottom' }, 
           colors: ['#50edda'],
           backgroundColor: '#6b6b6b'
+
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -83,9 +89,9 @@
 
         <div class="row sidebar">
             <div class="col-md-2 side_link">
-                <a href="index.html" class="active">Dashboard</a>
-                <a href="favorites.html">Favorites</a>
-                <a href="recent_stats.html">Recent Stats</a>
+                <a href="indexWeek.html" class="active">Dashboard</a>
+                <a href="favoritesWeek.html">Favorites</a>
+                <a href="recent_statsWeek.html">Recent Stats</a>
             </div>
             <p style = "border-top: 1px solid grey; width = 100% "></p>
             <div class="col-md-10" id="main_pane">
@@ -97,9 +103,9 @@
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu dropdown-inverse">
-                                <li><a href="#">Past 24 Hours</a></li>
+                                <li><a href="#">Past Day</a></li>
                                 <li><a href="#">Past Week</a></li>
-                                <li><a href="#">Past 4 Weeks</a></li>
+                                <li><a href="#">Past Month</a></li>
                             </ul>
                         </div>
                     </div>
@@ -237,9 +243,10 @@
 
     context.save();
     context.rotate(-Math.PI / 2);
+    context.translate(0-20, 0-margin.left-1);
     context.textAlign = "right";
-    context.textBaseline = "top";
-    context.font = "bold 10px sans-serif";
+    context.textBaseline = "bottom";
+    context.font = "10px sans-serif";
     context.fillText("Percentage", -10, 10);
     context.restore();
 
@@ -359,9 +366,10 @@
 
     context.save();
     context.rotate(-Math.PI / 2);
+    context.translate(0-50, 0-margin.left-1);
     context.textAlign = "right";
-    context.textBaseline = "top";
-    context.font = "bold 10px sans-serif";
+    context.textBaseline = "bottom";
+    context.font = "10px sans-serif";
     context.fillText("Number of songs", -10, 10);
     context.restore();
 
