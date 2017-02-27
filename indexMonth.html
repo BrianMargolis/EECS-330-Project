@@ -30,17 +30,22 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Day', 'Number of songs' ],
-          ['Monday',  114],
-          ['Tuesday',  78 ],
-          ['Wednesday',  160 ],
-          ['Thursday',  97 ],
-          ['Friday',  54 ],
-          ['Saturday',  25 ],
-          ['Sunday',  177 ]
+          ['January',  114],
+          ['February',  78 ],
+          ['March',  160 ],
+          ['April',  97 ],
+          ['May',  54 ],
+          ['June',  25 ],
+          ['July',  177 ],
+          ['August', 65 ],
+          ['September',78 ],
+          ['October',  90 ],
+          ['November',  203 ],
+          ['December',  177 ]
         ]);
 
         var options = {
-          title: 'SONGS PER DAY ',
+          title: 'SONGS PER MONTH ',
 		  titleTextStyle:{
 		  	color:'#dbdde0',
 		  	fontSize: 23,
@@ -132,12 +137,12 @@
                     <div class = "col-md-4">
                         <div class=" big_stat, widget" style = "height: 185px;">
                                 <h3 id = "list_heading"> MINUTES LISTENED</h3>
-                                <div style="text-align:center"><font size="30">467</font></div>
+                                <div style="text-align:center"><font size="30">1273</font></div>
                                 <h5 id = "list_heading"> &#8595 21% from last month</h5>
                         </div>
                         <div class="big_stat, widget" style = "height: 185px;" >
                                 <h3 id = "list_heading"> TOTAL SONGS</h3>
-                                <div style="text-align:center"><font size="30">394</font></div>
+                                <div style="text-align:center"><font size="30">895</font></div>
                                 <h5 id = "list_heading">&#8593 7% from last month</h5>
                         </div>
 
@@ -162,16 +167,16 @@
     var data = [
         {
             "source": "Apple Music",
-            "frequency": 0.06
+            "frequency": 0.12
 
         },
         {
             "source": "Pandora",
-            "frequency": 0.41
+            "frequency": 0.3
         },
         {
             "source": "Spotify",
-            "frequency": 0.54
+            "frequency": 0.58
         },
 
     ]
@@ -263,39 +268,39 @@
     var data = [
         {
             "genre": "Rock",
-            "frequency": 114
+            "frequency": 60
         },
         {
             "genre": "Pop",
-            "frequency": 46
+            "frequency": 99
         },
         {
             "genre": "Latin",
-            "frequency": 10
+            "frequency": 103
         },
         {
             "genre": "Alternative",
-            "frequency": 76
+            "frequency": 164
         },
         {
             "genre": "Classical",
-            "frequency": 67
+            "frequency": 70
         },
         {
             "genre": "Jazz",
-            "frequency": 251
+            "frequency": 69
         },
         {
             "genre": "Techno",
-            "frequency": 59
+            "frequency": 97
         },
         {
             "genre": "Raggae",
-            "frequency": 55
+            "frequency": 101
         },
         {
             "genre": "Heavy Metal",
-            "frequency": 27
+            "frequency": 132
         },
     ]
 
