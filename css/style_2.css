@@ -87,12 +87,12 @@ a.active {
 }
 
 .big_stat {
-    color: rgb(219, 221, 224);
+    color: white;
     text-align: center;
 }
 
 #list_heading {
-    color: rgb(219, 221, 224);
+    color: white;
     border-bottom: 5px;
     text-align: center;
 }
@@ -103,7 +103,7 @@ a.active {
 }
 
 ol p {
-    color: rgb(219, 221, 224);
+    color: white;
     font-style: italic;
 }
 

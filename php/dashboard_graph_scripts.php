@@ -30,7 +30,7 @@ switch ($period) {
                 var options = {
                     title: 'SONGS PER WEEKDAY',
                     titleTextStyle: {
-                        color: '#dbdde0',
+                        color: '#ffffff',
                         fontSize: 24,
                         bold: false
                     },
@@ -306,7 +306,7 @@ switch ($period) {
                 var options = {
                     title: 'SONGS PER WEEKDAY ',
                     titleTextStyle: {
-                        color: '#dbdde0',
+                        color: '#ffffff',
                         fontSize: 23,
                         bold: false
                     },
@@ -586,7 +586,7 @@ switch ($period) {
                 var options = {
                     title: 'SONGS PER WEEKDAY ',
                     titleTextStyle: {
-                        color: '#dbdde0',
+                        color: '#ffffff',
                         fontSize: 23,
                         bold: false
                     },

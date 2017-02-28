@@ -170,7 +170,7 @@ switch ($period) {
                 var options = {
                     title: 'SONGS PER TIME OF DAY',
                     titleTextStyle: {
-                        color: '#dbdde0',
+                        color: '#ffffff',
                         fontSize: 23,
                         bold: false
                     },
@@ -363,7 +363,7 @@ switch ($period) {
                 var options = {
                     title: 'SONGS PER TIME OF DAY',
                     titleTextStyle: {
-                        color: '#dbdde0',
+                        color: '#ffffff',
                         fontSize: 23,
                         bold: false
                     },
@@ -557,7 +557,7 @@ switch ($period) {
                 var options = {
                     title: 'SONGS PER TIME OF DAY',
                     titleTextStyle: {
-                        color: '#dbdde0',
+                        color: '#ffffff',
                         fontSize: 23,
                         bold: false
                     },
