@@ -141,16 +141,16 @@ switch ($period) {
             var data = [
                 {
                     "source": "Apple Music",
-                    "frequency": 0.06
+                    "frequency": 0.1
 
                 },
                 {
                     "source": "Pandora",
-                    "frequency": 0.41
+                    "frequency": 0.43
                 },
                 {
                     "source": "Spotify",
-                    "frequency": 0.54
+                    "frequency": 0.57
                 },
 
             ];
@@ -245,43 +245,43 @@ switch ($period) {
             var data = [
                 {
                     "decade": "20's",
-                    "frequency": 18
+                    "frequency": 56
                 },
                 {
                     "decade": "30's",
-                    "frequency": 8
+                    "frequency": 79
                 },
                 {
                     "decade": "40's",
-                    "frequency": 1
+                    "frequency": 5
                 },
                 {
                     "decade": "50's",
-                    "frequency": 67
+                    "frequency": 104
                 },
                 {
                     "decade": "60's",
-                    "frequency": 49
+                    "frequency": 107
                 },
                 {
                     "decade": "70's",
-                    "frequency": 204
+                    "frequency": 867
                 },
                 {
                     "decade": "80's",
-                    "frequency": 251
+                    "frequency": 1057
                 },
                 {
                     "decade": "90's",
-                    "frequency": 55
+                    "frequency": 452
                 },
                 {
                     "decade": "2000's",
-                    "frequency": 16
+                    "frequency": 3062
                 },
                 {
-                    "decade": "2000's",
-                    "frequency": 36
+                    "decade": "2010's",
+                    "frequency": 5721
                 },
             ];
 
@@ -475,43 +475,43 @@ switch ($period) {
             var data = [
                 {
                     "decade": "20's",
-                    "frequency": 18
+                    "frequency": 73
                 },
                 {
                     "decade": "30's",
-                    "frequency": 8
+                    "frequency": 183
                 },
                 {
                     "decade": "40's",
-                    "frequency": 1
+                    "frequency": 305
                 },
                 {
                     "decade": "50's",
-                    "frequency": 67
+                    "frequency": 342
                 },
                 {
                     "decade": "60's",
-                    "frequency": 49
+                    "frequency": 537
                 },
                 {
                     "decade": "70's",
-                    "frequency": 204
+                    "frequency": 982
                 },
                 {
                     "decade": "80's",
-                    "frequency": 251
+                    "frequency": 1420
                 },
                 {
                     "decade": "90's",
-                    "frequency": 55
+                    "frequency": 2498
                 },
                 {
                     "decade": "2000's",
-                    "frequency": 16
+                    "frequency": 3451
                 },
                 {
-                    "decade": "2000's",
-                    "frequency": 36
+                    "decade": "2010's",
+                    "frequency": 3291
                 },
             ];
 
@@ -601,16 +601,16 @@ switch ($period) {
             var data = [
                 {
                     "source": "Apple Music",
-                    "frequency": 0.06
+                    "frequency": 0.08
 
                 },
                 {
                     "source": "Pandora",
-                    "frequency": 0.41
+                    "frequency": 0.49
                 },
                 {
                     "source": "Spotify",
-                    "frequency": 0.54
+                    "frequency": 0.43
                 },
 
             ];
