@@ -18,9 +18,9 @@ if (isset($_GET["period"])) {
                     <span class="caret" style = "color: rgb(219, 221, 224)"></span>
                 </button>
                 <ul class="dropdown-menu dropdown-inverse">
-                    <li><a href='?period=day' onclick="updatePeriod('day')">PAST DAY</a></li>
-                    <li><a href='?period=week' onclick="updatePeriod('week')">PAST WEEK</a></li>
-                    <li><a href='?period=month' onclick="updatePeriod('month')">PAST MONTH</a></li>
+                    <li><a href='?period=day' class="dropDownItem" onclick="updatePeriod('day')">PAST DAY</a></li>
+                    <li><a href='?period=week' class="dropDownItem" onclick="updatePeriod('week')">PAST WEEK</a></li>
+                    <li><a href='?period=month' class="dropDownItem" onclick="updatePeriod('month')">PAST MONTH</a></li>
                 </ul>
             </div>
         </div>
