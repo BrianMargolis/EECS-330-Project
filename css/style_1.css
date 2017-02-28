@@ -186,7 +186,7 @@ ul {
     margin: 0;
 }
 
-li {
+ul li {
     /*float: right;*/
     list-style-type: : none;
     display: inline;

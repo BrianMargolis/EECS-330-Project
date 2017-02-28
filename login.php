@@ -16,7 +16,7 @@
             <br>
             <input type = "text" placeholder = "Password" id = "login_field">
             <br>
-            <a href="indexWeek.html"><input class="button" id = "login_button" type="submit" value="Sign In"></a>
+            <a href="index.php"><input class="button" id = "login_button" type="submit" value="Sign In"></a>
             <br>
             <br>
             <a href="signup.php" style="color: rgba(107,107,107,1); margin-left: 20%;">Need an account? Sign up here</a>

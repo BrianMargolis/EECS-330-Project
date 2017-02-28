@@ -16,31 +16,26 @@
 
     <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>-->
 </head>
-<body onload="main()">
-
-<div class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="index.php"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
-            </div>
-        </div>
-    </div>
-</div>
+<body onload="main()" style = "background-color:rgba(107, 107, 107, 1)">
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 login" id="main_pane">
-            <input id="login_field" type="text" placeholder="Username">
+    <div id = "login_box" style="margin-top: 3em">
+        <div class = "row">
+            <img src="images/Logo_Rough.png" alt="soundscape" style = "margin-left: 6em; margin-top: 2.5em; margin-bottom: 0.5em"/>
+        </div>
+        <div class = "row">
+            <input id = "login_field" type = "text" placeholder="Name" >
             <br>
-            <input id="login_field" type="text" placeholder="Password">
+            <input type = "text" placeholder = "Username" id = "login_field">
             <br>
-            <input id="login_field" type="text" placeholder="Verify password">
+            <input type = "text" placeholder = "Password" id = "login_field">
             <br>
-            <input id="login_field" type="text" placeholder="Email">
+            <input type = "text" placeholder = "Email" id = "login_field">
+            <input type = "text" placeholder = "Birthday" id = "login_field">
+            <a href="login.php"><input class="button" id = "login_button" type="submit" value="Sign Up"></a>
             <br>
+            <a href="login.php" style="color: rgba(107,107,107,1); margin-left: 20%;">Already a member? Sign in here</a>
             <br>
-            <a href="index.php"><input class="button" type="submit" style="color: black" value="Submit"></a>
         </div>
     </div>
 </div>

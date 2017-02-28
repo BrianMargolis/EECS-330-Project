@@ -4,27 +4,25 @@
     <?php include "php/head.php" ?>
     <title>Password Recovery</title>
 </head>
-<body onload="main()">
 
-<div class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="index.php"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
-            </div>
-        </div>
-    </div>
-</div>
+<body onload="main()" style = "background-color:rgba(107, 107, 107, 1)">
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 login" id="main_pane">
-            <input id="login_field" type="text" style="color: black" placeholder="Username">
-            <br> or <br>
-            <input id="login_field" type="text" placeholder="Email">
+    <div id = "login_box" >
+        <div class = "row">
+            <img src="images/Logo_Rough.png" alt="soundscape" style = "margin-left: 6em; margin-top: 2.5em; margin-bottom: 0.5em"/>
+        </div>
+        <div class = "row">
+            <input id = "login_field" type = "text" placeholder="Username" >
+            <br>
+            <input type = "text" placeholder = "Email" id = "login_field">
+            <br>
+            <a href="login.php"><input class="button" id = "login_button" type="submit" value="Request new password" style="margin-left: 25%"></a>
             <br>
             <br>
-            <a href="login.php"><input class="button" type="submit" style="color: black" value="Submit"></a>
+            <a href="login.php" style="color: rgba(107,107,107,1); margin-left: 20%;">Remember password? Login here</a>
+            <br>
+            <a href="signup.php" style="color: rgba(107,107,107,1); margin-left: 25%;" >New member? Sign up here</a>
         </div>
     </div>
 </div>
