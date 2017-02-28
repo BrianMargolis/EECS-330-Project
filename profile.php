@@ -6,13 +6,13 @@
 </head>
 <body onload="main()">
 
-<?php $active = "profile"; 
+<?php $active = "profile";
 include "php/header.php" ?>
 
 <div class="container-fluid">
     <div class="row">
-
-        <div class="col-md-12" id="login_box" style="color: white; background-color: rgba(147,147,147,1); padding-top: 2em; padding-left: 3em; margin-left: 35%; margin-top: 4em;">
+        <div class="col-md-12" id="login_box"
+             style="color: white; background-color: rgba(147,147,147,1); margin-left: 38%; width: 24%;">
             <h1 style="text-align: center; font-size: 30px; margin-left: -12px">JEFFY CLARK</h1>
             <br>
             <br>
@@ -26,10 +26,17 @@ include "php/header.php" ?>
             <br>
             <br>
             <div class="row">
-                    <div class="col-md-2"></div>
-                    <img src="images/pandora.png" width=50 alt="pandora" style="margin-left: 10px">
-                    <img src="images/spotify.png" width=50 alt="spotify" style="margin-left: 10px">
-                    <img src="images/last_fm.png" width=50 alt="pandora" style="margin-left: 10px">
+                <div class="col-md-4">
+                    <img src="images/pandora.png" width=50 alt="pandora">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/spotify.png" width=50 alt="spotify">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/last_fm.png" width=50 alt="pandora">
+                </div>
             </div>
         </div>
     </div>
