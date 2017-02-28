@@ -89,21 +89,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -117,7 +121,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -189,21 +193,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -217,7 +225,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -319,21 +327,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -347,7 +359,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -419,21 +431,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -447,7 +463,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -549,21 +565,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -577,7 +597,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -649,21 +669,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -677,7 +701,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();

@@ -82,21 +82,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -110,7 +114,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -170,16 +174,19 @@ switch ($period) {
                         fontSize: 23,
                         bold: false
                     },
-                    curveType: 'function',
-                    legend: {position: 'bottom'},
-                    colors: ['#50edda'],
-                    backgroundColor: '#6b6b6b',
-                    vAxis: {
-                        minValue: 0,
+                    hAxis: { 
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: { count: 5}},
+                        vAxis: { baselineColor: 'white',
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {color: 'white', count: 5},
+                    minValue: 0,
                         viewWindow: {
-                            min: -3
-                        }
-                    }
+                            min: -3}},
+                        curveType: 'function',
+                        legend: { position: 'bottom', textStyle: {color:'white'} },
+                        colors: ['#50edda'],
+                        backgroundColor: '#6b6b6b'
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -268,21 +275,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -296,7 +307,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -356,16 +367,21 @@ switch ($period) {
                         fontSize: 23,
                         bold: false
                     },
-                    curveType: 'function',
-                    legend: {position: 'bottom'},
-                    colors: ['#50edda'],
-                    backgroundColor: '#6b6b6b',
-                    vAxis: {
+                    hAxis: { 
+                         textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: { count: 5}},
+                        vAxis: { baselineColor: 'white',
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {color: 'white', count: 5},
                         minValue: 0,
                         viewWindow: {
                             min: -3
                         }
-                    }
+                    },
+                        curveType: 'function',
+                        legend: { position: 'bottom', textStyle: {color:'white'} },
+                    colors: ['#50edda'],
+                    backgroundColor: '#6b6b6b',
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -453,21 +469,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -481,7 +501,7 @@ switch ($period) {
             context.lineTo(0.5, 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -541,16 +561,20 @@ switch ($period) {
                         fontSize: 23,
                         bold: false
                     },
-                    curveType: 'function',
-                    legend: {position: 'bottom'},
-                    colors: ['#50edda'],
-                    backgroundColor: '#6b6b6b',
-                    vAxis: {
-                        minValue: 0,
+                    hAxis: { 
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: { count: 5}},
+                        vAxis: { baselineColor: 'white',
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {color: 'white', count: 5},
+                    minValue: 0,
                         viewWindow: {
                             min: -3
-                        }
-                    }
+                        }},
+                        curveType: 'function',
+                        legend: { position: 'bottom', textStyle: {color:'white'} },
+                    colors: ['#50edda'],
+                    backgroundColor: '#6b6b6b',
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));

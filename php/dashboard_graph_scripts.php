@@ -18,24 +18,32 @@ switch ($period) {
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['Day', 'Number of songs'],
-                    ['Monday', 114],
-                    ['Tuesday', 78],
-                    ['Wednesday', 160],
-                    ['Thursday', 97],
-                    ['Friday', 54],
-                    ['Saturday', 25],
-                    ['Sunday', 177]
+                    ['M', 114],
+                    ['T', 78],
+                    ['W', 160],
+                    ['TH', 97],
+                    ['F', 54],
+                    ['S', 25],
+                    ['SU', 177]
                 ]);
 
                 var options = {
-                    title: 'SONGS PER DAY',
+                    title: 'SONGS PER WEEKDAY',
                     titleTextStyle: {
                         color: '#dbdde0',
                         fontSize: 24,
                         bold: false
                     },
-                    curveType: 'function',
-                    legend: {position: 'bottom'},
+                    hAxis: { 
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: { count: 5}
+                    },
+                    vAxis: { baselineColor: 'white',
+                    textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                    gridlines: {color: 'white', count: 5}
+                },
+                curveType: 'function',
+                legend: { position: 'bottom', textStyle: {color:'white'} },
                     colors: ['#50edda'],
                     backgroundColor: '#6b6b6b'
 
@@ -88,10 +96,13 @@ switch ($period) {
             x.domain(data.map(function (d) {
                 return d.source;
             }));
+            context.fillStyle = "white";
+            context.fill();
             y.domain([0, d3.max(data, function (d) {
                 return d.frequency;
             })]);
-
+            context.fillStyle = "white";
+            context.fill();
             var yTickCount = 10,
                 yTicks = y.ticks(yTickCount),
                 yTickFormat = y.tickFormat(yTickCount, "%");
@@ -101,7 +112,7 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "center";
@@ -115,7 +126,7 @@ switch ($period) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -129,7 +140,7 @@ switch ($period) {
             context.lineTo(0.5, 0 + 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -211,6 +222,7 @@ switch ($period) {
             x.domain(data.map(function (d) {
                 return d.genre;
             }));
+
             y.domain([0, d3.max(data, function (d) {
                 return d.frequency;
             })]);
@@ -224,21 +236,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -252,7 +268,7 @@ switch ($period) {
             context.lineTo(0.5, 0 + 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -284,24 +300,31 @@ switch ($period) {
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['Day', 'Number of songs'],
-                    ['Monday', 114],
-                    ['Tuesday', 78],
-                    ['Wednesday', 160],
-                    ['Thursday', 97],
-                    ['Friday', 54],
-                    ['Saturday', 25],
-                    ['Sunday', 177]
+                    ['M', 114],
+                    ['T', 78],
+                    ['W', 160],
+                    ['TH', 97],
+                    ['F', 54],
+                    ['S', 25],
+                    ['SU', 177]
                 ]);
 
                 var options = {
-                    title: 'SONGS PER DAY ',
+                    title: 'SONGS PER WEEKDAY ',
                     titleTextStyle: {
                         color: '#dbdde0',
                         fontSize: 23,
                         bold: false
                     },
+                    hAxis: { 
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: { count: 5}},
+                        vAxis: { baselineColor: 'white',
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {color: 'white', count: 5}
+                    },
                     curveType: 'function',
-                    legend: {position: 'bottom'},
+                    legend: { position: 'bottom', textStyle: {color:'white'} },
                     colors: ['#50edda'],
                     backgroundColor: '#6b6b6b'
 
@@ -367,21 +390,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
-
+            context.fillStyle = "white";
+            context.fill();
+            
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -395,7 +422,7 @@ switch ($period) {
             context.lineTo(0.5, 0 + 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -490,21 +517,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -518,7 +549,7 @@ switch ($period) {
             context.lineTo(0.5, 0 + 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -549,24 +580,31 @@ switch ($period) {
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['Day', 'Number of songs'],
-                    ['Monday', 114],
-                    ['Tuesday', 78],
-                    ['Wednesday', 160],
-                    ['Thursday', 97],
-                    ['Friday', 54],
-                    ['Saturday', 25],
-                    ['Sunday', 177]
+                    ['M', 114],
+                    ['T', 78],
+                    ['W', 160],
+                    ['TH', 97],
+                    ['F', 54],
+                    ['S', 25],
+                    ['SU', 177]
                 ]);
 
                 var options = {
-                    title: 'SONGS PER DAY ',
+                    title: 'SONGS PER WEEKDAY ',
                     titleTextStyle: {
                         color: '#dbdde0',
                         fontSize: 23,
                         bold: false
                     },
+                    hAxis: { 
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: { count: 5}},
+                        vAxis: { baselineColor: 'white',
+                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {color: 'white', count: 5}
+                    },
                     curveType: 'function',
-                    legend: {position: 'bottom'},
+                    legend: { position: 'bottom', textStyle: {color:'white'} },
                     colors: ['#50edda'],
                     backgroundColor: '#6b6b6b'
 
@@ -632,21 +670,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -660,7 +702,7 @@ switch ($period) {
             context.lineTo(0.5, 0 + 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
@@ -755,21 +797,25 @@ switch ($period) {
                 context.moveTo(x(d) + x.bandwidth() / 2, height);
                 context.lineTo(x(d) + x.bandwidth() / 2, height + 6);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
+            context.fillStyle = "white";
+            context.fill();
 
             context.textAlign = "center";
             context.textBaseline = "top";
             x.domain().forEach(function (d) {
                 context.fillText(d, x(d) + x.bandwidth() / 2, height + 6);
             });
+            context.fillStyle = "white";
+            context.fill();
 
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
                 context.lineTo(-6, y(d) + 0.5);
             });
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.textAlign = "right";
@@ -783,7 +829,7 @@ switch ($period) {
             context.lineTo(0.5, 0 + 0.5);
             context.lineTo(0.5, height + 0.5);
             context.lineTo(-6.5, height + 0.5);
-            context.strokeStyle = "black";
+            context.strokeStyle = "white";
             context.stroke();
 
             context.save();
