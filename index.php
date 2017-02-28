@@ -14,7 +14,10 @@ include "php/time_selection.php"?>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12" id="main_pane">
+    	<div class = "col-md-1">
+    	
+    	</div>
+        <div class="col-md-10" id="main_pane">
 
             <?php include "php/dashboard_content.php"?>
         </div>
