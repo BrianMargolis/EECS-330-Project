@@ -26,7 +26,7 @@ function isActive($page, $active)
                     <li><a href="../index.php?period=<?php echo $period ?>" <?php isActive('dashboard', $active) ?>>DASHBOARD</a></li>
                     <li><a href="../favorites.php?period=<?php echo $period ?>" <?php isActive('favorites', $active) ?>>FAVORITES</a></li>
                     <li><a href="../listening_habits.php?period=<?php echo $period ?>" <?php isActive('recent_stats', $active) ?>>LISTENING HABITS</a></li>
-                    <li><a href="../profile.php">PROFILE</a></li>
+                    <li><a href="../profile.php?period=<?php echo $period ?>" <?php isActive('profile', $active) ?>>PROFILE</a></li>
                     <li><a href="../login.php">LOGOUT</a></li>
                 </ul>
             </div>
