@@ -12,7 +12,7 @@ include "php/header.php" ?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12" id="login_box"
-             style="color: white; background-color: rgba(147,147,147,1); margin-left: 38%; width: 24%;">
+             style="color: white; background-color: rgba(107, 107, 107, 1); margin-left: 38%; width: 24%;">
             <h1 style="text-align: center; font-size: 30px; margin-left: -12px">JEFFY CLARK</h1>
             <br>
             <br>
