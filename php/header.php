@@ -51,8 +51,5 @@ function isActive($page, $active)
                     Stats</a>
             </div>
         </div>
-        <div class="row">
-            <?php include "time_selection.php" ?>
-        </div>
     </div>
 </div>

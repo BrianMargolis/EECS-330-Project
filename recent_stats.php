@@ -8,7 +8,8 @@
 <body>
 
 <?php $active = "recent_stats";
-include "php/header.php" ?>
+include "php/header.php";
+include "php/time_selection.php" ?>
 
 <div class="container-fluid">
     <div class="row">
