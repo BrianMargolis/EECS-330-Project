@@ -2,14 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <?php include "php/head.php" ?>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Soundscape</title>
 </head>
 
 <body>
+
 <?php include "php/header.php" ?>
+
 <div class="row">
-    <?php $active = "dashboard"; include "php/sidebar.php" ?>
+    <?php $active = "dashboard";
+    include "php/sidebar.php" ?>
 
     <div class="col-md-10" id="main_pane">
         <div class="row">

@@ -3,7 +3,6 @@
 <head>
     <?php include "php/head.php" ?>
     <title>Music Stats</title>
-
 </head>
 
 <body onload="main()">
@@ -11,7 +10,9 @@
 <?php include "php/header.php" ?>
 
 <div class="row">
-    <?php $active = "favorites"; include "php/sidebar.php" ?>
+    <?php $active = "favorites";
+    include "php/sidebar.php" ?>
+
     <div class="col-md-10" id="main_pane">
         <div class="row">
             <?php include "php/time_selection.php" ?>
