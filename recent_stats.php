@@ -7,21 +7,15 @@
 
 <body>
 
-<?php include "php/header.php" ?>
+<?php $active = "recent_stats";
+include "php/header.php" ?>
 
-<div class="row">
-    <?php $active = "recent_stats";
-    include "php/sidebar.php" ?>
-
-    <div class="col-md-10" id="main_pane">
-        <div class="row">
-            <?php include "php/time_selection.php" ?>
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" id="main_pane">
+            <?php include "php/recent_stats_content.php" ?>
         </div>
-
-        <?php include "php/recent_stats_content.php" ?>
     </div>
-
 </div>
 </body>
 

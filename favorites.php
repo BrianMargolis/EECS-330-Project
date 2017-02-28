@@ -7,33 +7,30 @@
 
 <body onload="main()">
 
-<?php include "php/header.php" ?>
+<?php $active = "favorites";
+include "php/header.php" ?>
 
-<div class="row">
-    <?php $active = "favorites";
-    include "php/sidebar.php" ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" id="main_pane">
+            <?php include "php/favorites_content.php" ?>
 
-    <div class="col-md-10" id="main_pane">
-        <div class="row">
-            <?php include "php/time_selection.php" ?>
-        </div>
-
-        <?php include "php/favorites_content.php" ?>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="widget" style="height: 300px">
-                    <h3 id="list_heading"> MUSIC SOURCE</h3>
-                    <canvas class="graph" id="MusicSource" style="height: 80%; text-align: center;"></canvas>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="widget" style="height: 300px">
+                        <h3 id="list_heading"> MUSIC SOURCE</h3>
+                        <canvas class="graph" id="MusicSource" style="height: 80%; text-align: center;"></canvas>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="widget" style="height: 300px">
-                    <h3 id="list_heading"> SONGS PER DECADE</h3>
-                    <canvas class="graph" id="SongsbyDecade" style="height: 80%; text-align: center;"></canvas>
+                <div class="col-md-6">
+                    <div class="widget" style="height: 300px">
+                        <h3 id="list_heading"> SONGS PER DECADE</h3>
+                        <canvas class="graph" id="SongsbyDecade" style="height: 80%; text-align: center;"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 </body>

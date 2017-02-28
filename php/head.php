@@ -9,4 +9,4 @@
 <script src="../js/control.js" type="text/javascript"></script>
 <script src="../js/change_period.js" type="text/javascript"></script>
 
-<link href="../css/style_1.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen"/>

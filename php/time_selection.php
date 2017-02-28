@@ -8,7 +8,7 @@ if (isset($_GET["period"])) {
 ?>
 
 
-<div class="col-md-12" id="time_selection">
+<div class="col-md-2" id="time_selection">
     <div class="btn-group">
         <button class="btn btn-primary status">Past <?php echo $period ?></button>
         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">

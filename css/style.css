@@ -1,0 +1,152 @@
+* {
+    font-family: Verdana, sans-serif;
+    color: rgba(80, 237, 218, 1);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(47, 48, 48, 1);
+}
+
+.header * {
+    background-color: rgba(47, 48, 48, 1);
+    text-align: center;
+    padding: 5px;
+}
+
+.sidebar {
+    background-color: rgba(47, 48, 48, 1);
+    width: 100%;
+    text-align: center;
+}
+
+.side_link a {
+    background-color: rgba(107, 107, 107, 1); /* Grey background color */
+    width: 100%;
+    font-size: 140%;
+    padding-top: 30px;
+    color: rgba(80, 237, 218, 1);
+    font-family: Verdana, sans-serif;
+    display: block;
+    text-decoration: none;
+}
+
+.widget {
+    background-color: rgba(107, 107, 107, 1);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+#dark {
+    background-color: rgba(60, 60, 60, 1);
+}
+
+#light {
+    background-color: rgba(107, 107, 107, 1);
+}
+
+/* Add a background color on hover */
+.side_link a:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+/* Add a green color to the "active/current" link */
+.side_link a.active {
+    background-color: rgba(60, 60, 60, 1);
+
+}
+
+#main_pane {
+    background-color: rgba(47, 48, 48, 1);
+}
+
+#time_selection {
+    padding: 20px;
+    text-align: left;
+}
+
+#add_chart {
+    text-align: center;
+}
+
+#accountInfo {
+    text-align: center;
+    font-size: 120%;
+}
+
+#accountInfo {
+    text-align: center;
+}
+
+#big_graph {
+    text-align: center;
+}
+
+.big_stat {
+    color: rgb(219, 221, 224);
+    text-align: center;
+}
+
+#list_heading {
+    color: rgb(219, 221, 224);
+    border-bottom: 5px;
+    text-align: center;
+}
+
+#login {
+    position: relative;
+    left: 380px;
+}
+
+ol p {
+    color: rgb(219, 221, 224);
+    font-style: italic;
+}
+
+.login {
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.in {
+    background-color: #f5f5f5;
+}
+
+.button {
+    color: #0bdbdb;
+}
+
+#username {
+    color: #0bdbdb;
+}
+
+#MusicSource {
+    height: 200px;
+    width: 90%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    /*float: right;*/
+    list-style-type: : none;
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgba(107, 107, 107, 1);
+}
