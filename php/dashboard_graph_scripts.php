@@ -34,8 +34,10 @@ switch ($period) {
                         fontSize: 24,
                         bold: false
                     },
+                    hAxis: { baselineColor: 'red', textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10}, gridlines: {color: 'red', count: 5} },
+                    vAxis: { baselineColor: 'white', textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10}, gridlines: {color: 'white', count: 5},
                     curveType: 'function',
-                    legend: {position: 'bottom'},
+                    legend: { position: 'bottom', textStyle: {color:'white'} },
                     colors: ['#50edda'],
                     backgroundColor: '#6b6b6b'
 
