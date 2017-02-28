@@ -20,7 +20,7 @@
             <br>
             <input type = "text" placeholder = "Email" id = "login_field">
             <input type = "text" placeholder = "Birthday" id = "login_field">
-            <a href="login.php"><input class="button" id = "login_button" type="submit" value="Sign Up"></a>
+            <a href="index.php"><input class="button" id = "login_button" type="submit" value="Sign Up"></a>
             <br>
             <a href="login.php" style="color: rgba(107,107,107,1); margin-left: 20%;">Already a member? Sign in here</a>
             <br>
