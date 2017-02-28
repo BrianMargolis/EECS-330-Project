@@ -53,19 +53,19 @@ switch ($period) {
             var data = [
                 {
                     "source": "Apple Music",
-                    "frequency": 0.06
+                    "frequency": 0.1
 
                 },
                 {
                     "source": "Pandora",
-                    "frequency": 0.41
+                    "frequency": 0.43
                 },
                 {
                     "source": "Spotify",
-                    "frequency": 0.54
+                    "frequency": 0.57
                 },
 
-            ]
+            ];
 
 
             var canvas = document.getElementById("MusicSource"),
@@ -154,11 +154,11 @@ switch ($period) {
             var data = [
                 {
                     "genre": "Rock",
-                    "frequency": 114
+                    "frequency": 4
                 },
                 {
                     "genre": "Pop",
-                    "frequency": 46
+                    "frequency": 16
                 },
                 {
                     "genre": "Latin",
@@ -166,29 +166,29 @@ switch ($period) {
                 },
                 {
                     "genre": "Alternative",
-                    "frequency": 76
+                    "frequency": 7
                 },
                 {
                     "genre": "Classical",
-                    "frequency": 67
+                    "frequency": 6
                 },
                 {
                     "genre": "Jazz",
-                    "frequency": 251
+                    "frequency": 2
                 },
                 {
                     "genre": "Techno",
-                    "frequency": 59
+                    "frequency": 5
                 },
                 {
-                    "genre": "Raggae",
-                    "frequency": 55
+                    "genre": "Reggae",
+                    "frequency": 5
                 },
                 {
                     "genre": "Heavy Metal",
-                    "frequency": 27
+                    "frequency": 2
                 },
-            ]
+            ];
 
 
             var canvas = document.getElementById("SongsbyGenre"),
@@ -331,7 +331,7 @@ switch ($period) {
                     "frequency": 0.54
                 },
 
-            ]
+            ];
 
 
             var canvas = document.getElementById("MusicSource"),
@@ -420,41 +420,41 @@ switch ($period) {
             var data = [
                 {
                     "genre": "Rock",
-                    "frequency": 114
+                    "frequency": 24
                 },
                 {
                     "genre": "Pop",
-                    "frequency": 46
+                    "frequency": 56
                 },
                 {
                     "genre": "Latin",
-                    "frequency": 10
+                    "frequency": 80
                 },
                 {
                     "genre": "Alternative",
-                    "frequency": 76
+                    "frequency": 50
                 },
                 {
                     "genre": "Classical",
-                    "frequency": 67
+                    "frequency": 10
                 },
                 {
                     "genre": "Jazz",
-                    "frequency": 251
+                    "frequency": 130
                 },
                 {
                     "genre": "Techno",
-                    "frequency": 59
+                    "frequency": 30
                 },
                 {
-                    "genre": "Raggae",
-                    "frequency": 55
+                    "genre": "Reggae",
+                    "frequency": 32
                 },
                 {
                     "genre": "Heavy Metal",
-                    "frequency": 27
+                    "frequency": 12
                 },
-            ]
+            ];
 
 
             var canvas = document.getElementById("SongsbyGenre"),
@@ -584,19 +584,19 @@ switch ($period) {
             var data = [
                 {
                     "source": "Apple Music",
-                    "frequency": 0.06
+                    "frequency": 0.08
 
                 },
                 {
                     "source": "Pandora",
-                    "frequency": 0.41
+                    "frequency": 0.49
                 },
                 {
                     "source": "Spotify",
-                    "frequency": 0.54
+                    "frequency": 0.43
                 },
 
-            ]
+            ];
 
 
             var canvas = document.getElementById("MusicSource"),
@@ -685,41 +685,41 @@ switch ($period) {
             var data = [
                 {
                     "genre": "Rock",
-                    "frequency": 114
+                    "frequency": 72
                 },
                 {
                     "genre": "Pop",
-                    "frequency": 46
+                    "frequency": 186
                 },
                 {
                     "genre": "Latin",
-                    "frequency": 10
+                    "frequency": 301
                 },
                 {
                     "genre": "Alternative",
-                    "frequency": 76
+                    "frequency": 211
                 },
                 {
                     "genre": "Classical",
-                    "frequency": 67
+                    "frequency": 34
                 },
                 {
                     "genre": "Jazz",
-                    "frequency": 251
+                    "frequency": 504
                 },
                 {
                     "genre": "Techno",
-                    "frequency": 59
+                    "frequency": 80
                 },
                 {
-                    "genre": "Raggae",
-                    "frequency": 55
+                    "genre": "Reggae",
+                    "frequency": 90
                 },
                 {
                     "genre": "Heavy Metal",
-                    "frequency": 27
+                    "frequency": 50
                 },
-            ]
+            ];
 
 
             var canvas = document.getElementById("SongsbyGenre"),
