@@ -38,16 +38,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 login" id="main_pane">
-            Username:
-            <label>
-                <input class="in" type="text" name="user">
-            </label>
+            <input id="login_field" type="text" placeholder="Username">
             <br>
-            Password:
-            <label>
-                <input class="in" type="text" name="pwd">
-            </label>
-            <br>
+            <input id="login_field" type="text" placeholder="Password">
             <br>
             <a href="index.php"><input class="button" type="submit" value="Submit"></a>
         </div>
