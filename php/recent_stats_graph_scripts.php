@@ -15,11 +15,11 @@ switch ($period) {
             var data = [
                 {
                     "genre": "Rock",
-                    "frequency": 114
+                    "frequency": 4
                 },
                 {
                     "genre": "Pop",
-                    "frequency": 46
+                    "frequency": 16
                 },
                 {
                     "genre": "Latin",
@@ -27,29 +27,29 @@ switch ($period) {
                 },
                 {
                     "genre": "Alternative",
-                    "frequency": 76
+                    "frequency": 7
                 },
                 {
                     "genre": "Classical",
-                    "frequency": 67
+                    "frequency": 6
                 },
                 {
                     "genre": "Jazz",
-                    "frequency": 251
+                    "frequency": 2
                 },
                 {
                     "genre": "Techno",
-                    "frequency": 59
+                    "frequency": 5
                 },
                 {
-                    "genre": "Raggae",
-                    "frequency": 55
+                    "genre": "Reggae",
+                    "frequency": 5
                 },
                 {
                     "genre": "Heavy Metal",
-                    "frequency": 27
+                    "frequency": 2
                 },
-            ]
+            ];
 
 
             var canvas = document.getElementById("SongsbyGenre"),
@@ -59,12 +59,9 @@ switch ($period) {
                 width = canvas.width - margin.left - margin.right,
                 height = canvas.height - margin.top - margin.bottom;
 
-            var x = d3.scaleBand()
-                .rangeRound([0, width])
-                .padding(0.1);
+            var x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
 
-            var y = d3.scaleLinear()
-                .rangeRound([height, 0]);
+            var y = d3.scaleLinear().rangeRound([height, 0]);
 
             context.translate(margin.left, margin.top);
 
@@ -140,8 +137,8 @@ switch ($period) {
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['Time', 'Number of songs'],
-                    ['12:00 AM', 30],
-                    ['1:00 AM', 0],
+                    ['12:00 AM', 20],
+                    ['1:00 AM', 5],
                     ['2:00 AM', 0],
                     ['3:00 AM', 0],
                     ['4:00 AM', 0],
@@ -150,20 +147,20 @@ switch ($period) {
                     ['7:00 AM', 0],
                     ['8:00 AM', 5],
                     ['9:00 AM', 12],
-                    ['10:00 AM', 41],
+                    ['10:00 AM', 18],
                     ['11:00 AM', 14],
                     ['12:00 PM', 19],
-                    ['1:00 PM', 35],
-                    ['2:00 PM', 39],
-                    ['3:00 PM', 46],
-                    ['4:00 PM', 48],
+                    ['1:00 PM', 17],
+                    ['2:00 PM', 15],
+                    ['3:00 PM', 12],
+                    ['4:00 PM', 14],
                     ['5:00 PM', 16],
                     ['6:00 PM', 22],
-                    ['7:00 PM', 58],
-                    ['8:00 PM', 85],
-                    ['9:00 PM', 113],
-                    ['10:00 PM', 74],
-                    ['11:00 PM', 48],
+                    ['7:00 PM', 21],
+                    ['8:00 PM', 19],
+                    ['9:00 PM', 19],
+                    ['10:00 PM', 18],
+                    ['11:00 PM', 19],
                 ]);
 
                 var options = {
@@ -176,7 +173,13 @@ switch ($period) {
                     curveType: 'function',
                     legend: {position: 'bottom'},
                     colors: ['#50edda'],
-                    backgroundColor: '#6b6b6b'
+                    backgroundColor: '#6b6b6b',
+                    vAxis: {
+                        minValue: 0,
+                        viewWindow: {
+                            min: -3
+                        }
+                    }
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -195,41 +198,41 @@ switch ($period) {
             var data = [
                 {
                     "genre": "Rock",
-                    "frequency": 114
+                    "frequency": 24
                 },
                 {
                     "genre": "Pop",
-                    "frequency": 46
+                    "frequency": 56
                 },
                 {
                     "genre": "Latin",
-                    "frequency": 10
+                    "frequency": 80
                 },
                 {
                     "genre": "Alternative",
-                    "frequency": 76
+                    "frequency": 50
                 },
                 {
                     "genre": "Classical",
-                    "frequency": 67
+                    "frequency": 10
                 },
                 {
                     "genre": "Jazz",
-                    "frequency": 251
+                    "frequency": 130
                 },
                 {
                     "genre": "Techno",
-                    "frequency": 59
+                    "frequency": 30
                 },
                 {
-                    "genre": "Raggae",
-                    "frequency": 55
+                    "genre": "Reggae",
+                    "frequency": 32
                 },
                 {
                     "genre": "Heavy Metal",
-                    "frequency": 27
+                    "frequency": 12
                 },
-            ]
+            ];
 
 
             var canvas = document.getElementById("SongsbyGenre"),
@@ -320,43 +323,49 @@ switch ($period) {
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['Time', 'Number of songs'],
-                    ['12:00 AM', 30],
-                    ['1:00 AM', 0],
+                    ['12:00 AM', 103],
+                    ['1:00 AM', 72],
                     ['2:00 AM', 0],
                     ['3:00 AM', 0],
                     ['4:00 AM', 0],
                     ['5:00 AM', 0],
                     ['6:00 AM', 0],
                     ['7:00 AM', 0],
-                    ['8:00 AM', 5],
-                    ['9:00 AM', 12],
-                    ['10:00 AM', 41],
-                    ['11:00 AM', 14],
-                    ['12:00 PM', 19],
-                    ['1:00 PM', 35],
-                    ['2:00 PM', 39],
-                    ['3:00 PM', 46],
-                    ['4:00 PM', 48],
-                    ['5:00 PM', 16],
-                    ['6:00 PM', 22],
-                    ['7:00 PM', 58],
-                    ['8:00 PM', 85],
-                    ['9:00 PM', 113],
-                    ['10:00 PM', 74],
-                    ['11:00 PM', 48],
+                    ['8:00 AM', 29],
+                    ['9:00 AM', 80],
+                    ['10:00 AM', 37],
+                    ['11:00 AM', 99],
+                    ['12:00 PM', 89],
+                    ['1:00 PM', 183],
+                    ['2:00 PM', 164],
+                    ['3:00 PM', 132],
+                    ['4:00 PM', 121],
+                    ['5:00 PM', 125],
+                    ['6:00 PM', 122],
+                    ['7:00 PM', 105],
+                    ['8:00 PM', 110],
+                    ['9:00 PM', 120],
+                    ['10:00 PM', 89],
+                    ['11:00 PM', 120],
                 ]);
 
                 var options = {
                     title: 'SONGS PER TIME OF DAY',
-                    titleTextStyle:{
-                        color:'#dbdde0',
+                    titleTextStyle: {
+                        color: '#dbdde0',
                         fontSize: 23,
                         bold: false
                     },
                     curveType: 'function',
                     legend: {position: 'bottom'},
                     colors: ['#50edda'],
-                    backgroundColor: '#6b6b6b'
+                    backgroundColor: '#6b6b6b',
+                    vAxis: {
+                        minValue: 0,
+                        viewWindow: {
+                            min: -3
+                        }
+                    }
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -374,41 +383,41 @@ switch ($period) {
             var data = [
                 {
                     "genre": "Rock",
-                    "frequency": 114
+                    "frequency": 72
                 },
                 {
                     "genre": "Pop",
-                    "frequency": 46
+                    "frequency": 186
                 },
                 {
                     "genre": "Latin",
-                    "frequency": 10
+                    "frequency": 301
                 },
                 {
                     "genre": "Alternative",
-                    "frequency": 76
+                    "frequency": 211
                 },
                 {
                     "genre": "Classical",
-                    "frequency": 67
+                    "frequency": 34
                 },
                 {
                     "genre": "Jazz",
-                    "frequency": 251
+                    "frequency": 504
                 },
                 {
                     "genre": "Techno",
-                    "frequency": 59
+                    "frequency": 80
                 },
                 {
-                    "genre": "Raggae",
-                    "frequency": 55
+                    "genre": "Reggae",
+                    "frequency": 90
                 },
                 {
                     "genre": "Heavy Metal",
-                    "frequency": 27
+                    "frequency": 50
                 },
-            ]
+            ];
 
 
             var canvas = document.getElementById("SongsbyGenre"),
@@ -499,43 +508,49 @@ switch ($period) {
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['Time', 'Number of songs'],
-                    ['12:00 AM', 30],
-                    ['1:00 AM', 0],
+                    ['12:00 AM', 203],
+                    ['1:00 AM', 142],
                     ['2:00 AM', 0],
                     ['3:00 AM', 0],
                     ['4:00 AM', 0],
                     ['5:00 AM', 0],
                     ['6:00 AM', 0],
                     ['7:00 AM', 0],
-                    ['8:00 AM', 5],
-                    ['9:00 AM', 12],
-                    ['10:00 AM', 41],
-                    ['11:00 AM', 14],
-                    ['12:00 PM', 19],
-                    ['1:00 PM', 35],
-                    ['2:00 PM', 39],
-                    ['3:00 PM', 46],
-                    ['4:00 PM', 48],
-                    ['5:00 PM', 16],
-                    ['6:00 PM', 22],
-                    ['7:00 PM', 58],
-                    ['8:00 PM', 85],
-                    ['9:00 PM', 113],
-                    ['10:00 PM', 74],
-                    ['11:00 PM', 48],
+                    ['8:00 AM', 229],
+                    ['9:00 AM', 280],
+                    ['10:00 AM', 237],
+                    ['11:00 AM', 299],
+                    ['12:00 PM', 289],
+                    ['1:00 PM', 383],
+                    ['2:00 PM', 364],
+                    ['3:00 PM', 332],
+                    ['4:00 PM', 341],
+                    ['5:00 PM', 325],
+                    ['6:00 PM', 312],
+                    ['7:00 PM', 305],
+                    ['8:00 PM', 310],
+                    ['9:00 PM', 320],
+                    ['10:00 PM', 289],
+                    ['11:00 PM', 220],
                 ]);
 
                 var options = {
                     title: 'SONGS PER TIME OF DAY',
-                    titleTextStyle:{
-                        color:'#dbdde0',
+                    titleTextStyle: {
+                        color: '#dbdde0',
                         fontSize: 23,
                         bold: false
                     },
                     curveType: 'function',
                     legend: {position: 'bottom'},
                     colors: ['#50edda'],
-                    backgroundColor: '#6b6b6b'
+                    backgroundColor: '#6b6b6b',
+                    vAxis: {
+                        minValue: 0,
+                        viewWindow: {
+                            min: -3
+                        }
+                    }
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
