@@ -15,9 +15,9 @@ if (isset($_GET["period"])) {
             <span class="caret"></span>
         </button>
         <ul class="dropdown-menu dropdown-inverse">
-            <li><a href='?period=day' onclick="updatePeriod('day')">Past Day</a></li>
-            <li><a href='?period=week' onclick="updatePeriod('week')">Past Week</a></li>
-            <li><a href='?period=month' onclick="updatePeriod('month')">Past Month</a></li>
+            <li><a href='?period=day' onclick="updatePeriod('day')">Past day</a></li>
+            <li><a href='?period=week' onclick="updatePeriod('week')">Past week</a></li>
+            <li><a href='?period=month' onclick="updatePeriod('month')">Past month</a></li>
         </ul>
     </div>
 </div>
