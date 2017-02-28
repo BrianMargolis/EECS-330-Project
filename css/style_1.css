@@ -189,7 +189,7 @@ ul {
 
 ul li {
     /*float: right;*/
-    list-style-type: : none;
+    list-style-type:none;
     display: inline;
     padding-right: 10px;
     font-size: 1.3em;
