@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <?php include "php/head.php" ?>
-    <title>Music Stats</title>
+    <title>Favorites</title>
 </head>
 
 <body onload="main()">
