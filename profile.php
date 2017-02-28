@@ -12,11 +12,11 @@ include "php/header.php" ?>
 <div class="container-fluid">
     <div class="row">
 
-        <div class="col-md-12" id="main_pane" style="color: white">
-            Name: Jeffy Clurk
+        <div class="col-md-12" id="login_box" style="color: white; background-color: rgba(147,147,147,1); padding-top: 2em; padding-left: 3em; margin-left: 35%; margin-top: 4em;">
+            <h1 style="text-align: center; font-size: 30px; margin-left: -12px">JEFFY CLARK</h1>
             <br>
             <br>
-            Email: jeffyclurk@u.northwestern.edu
+            Email: jeffyclark@u.northwestern.edu
             <br>
             <br>
             Birthday: 06/03/1997
@@ -26,6 +26,7 @@ include "php/header.php" ?>
             <br>
             <br>
             <div class="row">
+                    <div class="col-md-2"></div>
                     <img src="images/pandora.png" width=50 alt="pandora" style="margin-left: 10px">
                     <img src="images/spotify.png" width=50 alt="spotify" style="margin-left: 10px">
                     <img src="images/last_fm.png" width=50 alt="pandora" style="margin-left: 10px">

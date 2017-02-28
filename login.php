@@ -4,33 +4,24 @@
     <?php include "php/head.php" ?>
     <title>Login</title>
 </head>
-<body onload="main()">
-
-<div class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="index.php"><img src="images/Logo_Rough.png" alt="soundscape"/></a>
-            </div>
-        </div>
-    </div>
-</div>
+<body onload="main()" style = "background-color:rgba(107, 107, 107, 1)">
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 login" id="main_pane">
-            <input id="login_field" type="text" style="color: black" placeholder="Username">
+    <div id = "login_box" >
+        <div class = "row">
+            <img src="images/Logo_Rough.png" alt="soundscape" style = "margin-left: 6em; margin-top: 2.5em; margin-bottom: 0.5em"/>
+        </div>
+        <div class = "row">
+            <input id = "login_field" type = "text" placeholder="Username" >
             <br>
-            <input id="login_field" type="text" style="color: black" placeholder="Password">
+            <input type = "text" placeholder = "Password" id = "login_field">
+            <br>
+            <a href="indexWeek.html"><input class="button" id = "login_button" type="submit" value="Sign In"></a>
             <br>
             <br>
-            <a href="index.php"><input class="button" type="submit" style="color: black" value="Submit"></a>
+            <a href="signup.php" style="color: rgba(107,107,107,1); margin-left: 20%;">Need an account? Sign up here</a>
             <br>
-            <br>
-            <a href="signup.php"><input class="button" type="submit" style="color: black" value="Sign Up"></a>
-            <br>
-            <a href="forgot_password.php"><input class="button" type="submit" style="color: black"
-                                                 value="Forgot Password"></a>
+            <a href="forgot_password.php" style="color: rgba(107,107,107,1); margin-left: 30%;" >Forgot password?</a>
         </div>
     </div>
 </div>
