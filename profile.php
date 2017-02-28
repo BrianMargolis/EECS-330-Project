@@ -30,7 +30,6 @@ include "php/header.php" ?>
                     <img src="images/pandora.png" width=50 alt="pandora" style="margin-left: 10px">
                     <img src="images/spotify.png" width=50 alt="spotify" style="margin-left: 10px">
                     <img src="images/last_fm.png" width=50 alt="pandora" style="margin-left: 10px">
-
             </div>
         </div>
     </div>
