@@ -161,6 +161,7 @@ ol p {
 #time_button {
     background-image: linear-gradient(to bottom, rgba(87, 87, 87, 1), rgba(87, 87, 87, 1) 100%);
     border: none;
+    background-color: rgba(47, 47, 47, 1);
 }
 
 #time_button:hover {
