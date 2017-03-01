@@ -28,22 +28,29 @@ switch ($period) {
                 ]);
 
                 var options = {
-                    title: 'SONGS PER WEEKDAY',
+                    title: 'SONGS PER WEEKDAY ',
                     titleTextStyle: {
                         color: '#ffffff',
-                        fontSize: 24,
+                        fontSize: 23,
                         bold: false
                     },
-                    hAxis: { textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10}, gridlines: {count: 5} },
-                    vAxis: {textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10}, gridlines: {color: 'white', count: 5},
+                    hAxis: {
+                        textStyle: {color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {count: 5}
+                    },
+                    vAxis: {
+                        baselineColor: 'white',
+                        textStyle: {color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {color: 'white', count: 5}
+                    },
                     curveType: 'function',
-                    legend: { position: 'bottom', textStyle: {color:'white'} },
+                    legend: {position: 'bottom', textStyle: {color: 'white'}},
                     colors: ['#50edda'],
                     backgroundColor: '#6b6b6b'
 
                 };
 
-                var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+                    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
                 chart.draw(data, options);
             }
@@ -310,19 +317,20 @@ switch ($period) {
                         fontSize: 23,
                         bold: false
                     },
-                    hAxis: { 
-                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
-                        gridlines: { count: 5}},
-                        vAxis: { baselineColor: 'white',
-                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                    hAxis: {
+                        textStyle: {color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {count: 5}
+                    },
+                    vAxis: {
+                        baselineColor: 'white',
+                        textStyle: {color: 'white', fontName: 'Arial', fontSize: 10},
                         gridlines: {color: 'white', count: 5}
                     },
                     curveType: 'function',
-                    legend: { position: 'bottom', textStyle: {color:'white'} },
+                    legend: {position: 'bottom', textStyle: {color: 'white'}},
                     colors: ['#50edda'],
                     backgroundColor: '#6b6b6b'
-
-                };
+                }
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
@@ -396,7 +404,7 @@ switch ($period) {
             });
             context.fillStyle = "white";
             context.fill();
-            
+
             context.beginPath();
             yTicks.forEach(function (d) {
                 context.moveTo(0, y(d) + 0.5);
@@ -590,19 +598,20 @@ switch ($period) {
                         fontSize: 23,
                         bold: false
                     },
-                    hAxis: { 
-                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
-                        gridlines: { count: 5}},
-                        vAxis: { baselineColor: 'white',
-                        textStyle:{ color: 'white', fontName: 'Arial', fontSize: 10},
+                    hAxis: {
+                        textStyle: {color: 'white', fontName: 'Arial', fontSize: 10},
+                        gridlines: {count: 5}
+                    },
+                    vAxis: {
+                        baselineColor: 'white',
+                        textStyle: {color: 'white', fontName: 'Arial', fontSize: 10},
                         gridlines: {color: 'white', count: 5}
                     },
                     curveType: 'function',
-                    legend: { position: 'bottom', textStyle: {color:'white'} },
+                    legend: {position: 'bottom', textStyle: {color: 'white'}},
                     colors: ['#50edda'],
                     backgroundColor: '#6b6b6b'
-
-                };
+                }
 
                 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
